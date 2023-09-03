@@ -1,0 +1,53 @@
+{
+    "projects": [
+        {
+            "title": "Avesha E2E Testing",
+            "images": [],
+            "files": [],
+            "skills": ["Javascript", "GoLang", "CypressJS", "Ginkgo", "HTML", "Kubernetes", "Docker", "GitHub Actions", "Documentation", "Unit Testing", "Written/Verbal Communication", "Technical Communication"],
+            "description": "Working as a part of the testing team, I developed E2E test suites for Avesha's Kubeslice UI product. I designed and documented the tests to be developed before beginning. I wrote tests using a container-in-container environment, utilizing the Ginkgo GoLang testing framework to validate the deployment of the application onto a Kubernetes cluster. The Ginkgo tests spawned Docker containers to run the Cypress JS tests, which tested the frontend UI and the accuracy of the information in the UI as compared to our backend data. The containerized environment made the testing more efficient as all memory was deallocated once the tests finished running. I developed test summaries for each testing clause, and presented my work to my peers at the company. This project taught me a lot about the importance of documentation and communication within the flow of a company with a lot of moving pieces." 
+        },
+        {
+            "title": "Avesha Kubeslice Deployment Testing",
+            "images": [],
+            "files": [],
+            "skills": ["Bash", "Linux", "Go", "Ginkgo", "AWS", "GCP", "Kubernetes"],
+            "description": ""
+        },
+        {
+            "title": "RateYourDining",
+            "images": [],
+            "files": [],
+            "skills": ["React", "Firestore", "Firebase", "HTML", "CSS", "ChakraUI", "UX Design"],
+            "description": ""
+        },
+        {
+            "title": "Recommendify",
+            "images": [],
+            "files": [],
+            "skills": ["APIs", "NodeJS", "HTML", "CSS", "ExpressJS", "UX Design"],
+            "description": ""
+        },
+        {
+            "title": "BallIQ",
+            "images": [],
+            "files": [],
+            "skills": ["MySQL", "ExpressJS", "React", "NodeJS", "HTML", "CSS", "Python", "Machine Learning", "ChakraUI", "UX Design"],
+            "description": ""
+        },
+        {
+            "title": "2-Player Snake",
+            "images": [],
+            "files": ["MultiSnake.zip"],
+            "skills": ["Java", "Code Organization", "GUI-Design", "Processing 3.0", "Data Structures"],
+            "description": "Local multiplayer snake game developed using Java without the use of others' code. I decided to do this to better understand object-oriented programming, GUI design, and data structures. I created a GUI from scratch, which allowed me to better understand what is going on behind the hood of a graphical interface. I had to think creatively about how to make something that I previously took for granted. This project gave me perspective on how to define and achieve goals, the importance of documentation, and the value of working on personal projects to improve or learn new skillsets."
+        },
+        {
+            "title": "Socket Chess",
+            "images": [],
+            "files": [],
+            "skills": ["Python", "Socket Programming", "Network Programming", "Verbal Communication", "Task Prioritization", "Project Planning", "TCP/UDP"],
+            "description": "A partner and I created a peer-to-peer command-line chess game for our Network Programming course. The goal was to create a chess application in Python that would allow 2 players to play chess using a TCP protocol and a full-fledged GUI to go along with it. As we worked on the project, we realized that our aspirations were greater than the scope of the project, and shifted our focus to a terminal-based chess application. We used a UDP connection with python socket programming to send a move to the opposing player, who then had as long as they pleased to respond with a move of their own. We implemented a system that checked whether a given move was valid, and checked the state of the game for a winner after every move. Although the final product was rudimentary, this project taught me a lot about the software development process. I learned how to manage workload between 2 people, which allowed each of us to play to our own strengths to get the project done more efficiently. I also learned how important it is to manage time and stay focused on a goal; sometimes it may feel like the right time create images of the chess-pieces, but that time is better spent working on the functionality of the game."
+        }
+    ]
+}
