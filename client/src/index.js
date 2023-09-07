@@ -6,19 +6,22 @@ import {
   Route, 
   RouterProvider,
   Outlet
-} from 'react-router-dom'
+} from 'react-router-dom';
 import './styles/index.css';
-import Homepage from './pages/Homepage';
-import Home from './pages/Home'
+import Home from './pages/Home';
 import ProjectPage from './pages/ProjectPage';
+import ExperiencePage from './pages/ExperiencePage';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 // import reportWebVitals from './reportWebVitals';
 
 // router and routes
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Outlet />}>
-      <Route index element={<Homepage />} />
-      <Route path="home" element={<Home/>}/>
+      <Route index element={<Home />} />
+      <Route path="experience" element={<ExperiencePage/>}/>
       <Route path="projects" element={<ProjectPage/>}/>      
     </Route>
   )
@@ -26,7 +29,12 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <RouterProvider router={router}/>
+    <div className='page'>
+        <title>{'<Joseph Turner/>'}</title>
+        <Header/>
+        <RouterProvider router={router}/>
+        <Footer/>
+    </div>
   )
 }
 
