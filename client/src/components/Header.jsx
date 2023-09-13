@@ -1,23 +1,18 @@
 function Header() {
     return (
         <header className='header'>
-            <div className='header-card'>
-                <h2 className='header-name'>Joseph Turner</h2>
-                <p className='header-job'>Software Engineer</p>
+            <div className='header-logo-title'>
+                <img src='/icons/portfolio-icon.svg' alt='' className='item-logo'/>
+                <div className='header-title'>
+                    <h2 className='header-name'>Joseph Turner</h2>
+                    <p className='header-job'>Software Engineer</p>
+                </div>
             </div>
             <ol className='header-links'>
-                <li>
-                    <a href="/" className='header-link'>Home</a>
-                </li>
-                <li>
-                    <a href="/projects" className='header-link'>Projects</a>
-                </li>
-                <li>
-                    <a href="/experience" className='header-link'>Experience</a>
-                </li>
-                <li>
-                    <a href="/contact" className='header-link'>Contact</a>
-                </li>
+                <a href="/" className='header-link'>Home</a>
+                <a href="/projects" className='header-link'>Projects</a>
+                <a href="/experience" className='header-link'>Experience</a>
+                <a href="/education" className='header-link'>Education</a>
             </ol>
         </header>
     )

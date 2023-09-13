@@ -1,0 +1,25 @@
+{
+    "education": [
+        {
+            "where": "Wentworth Institute of Technology",
+            "degree": "Bachelor's of Science in Computer Science",
+            "ps": "Minors in Applied Mathematics & Computer Networking",
+            "when": "Class of 2023",
+            "description": "I completed my Bachelor's of Science in Computer Science at Wentworth Insitute of Technology in August of 2023. As I gained a better understanding of what computer science is, I found a love for web development, which was my focus for the latter half of my time at Wentworth, and inspired me to take on a double-minor. As a part of my Mathematics minor, I took a Machine Learning course that opened a new interest in data-driven mathematics and backend data handling, which I hope to apply in my career as a full-stack developer. In pursuit of the Computer Networking minor, I learned how internet protocols and routing standards work, which improved my understanding of full-stack development and computer security.",
+            "courses": ["Algorithms", "Data Structures", "Databases", "Web Development", "Operating Systems", "Machine Learning", "Software Engineering"],
+            "skills": ["Java", "Python", "JavaScript", "HTML", "CSS", "Technical Communication", "Team-Based Learning", "Indepedence"],
+            "link": "https://wit.edu",
+            "logo": "/icons/wentworth-logo.svg"
+        },
+        {
+            "where": "Rising Tide Charter Public High School",
+            "degree": "High School Diploma",
+            "when": "Class of 2019",
+            "description": "I attended RTCPHS and received my high school diploma in 2019. Rising Tide is I found my love for problem-solving and computer science as I completed multiple computer science courses in python. During my Senior year, I worked with a group of 3 other students to develop a mobile application for the Congressional App Challenge. We won our district and traveled to DC to represent our district to congress. This is where I learned how to work as a part of a larger group, and I fell in love with the simultaneously creative and technical art of application development.",
+            "courses": ["Computer Science I", "Computer Science II", "Algorithms: Python Programming"],
+            "skills": ["Written Communication", "Object-Oriented Programming", "Time Management", "Team-Based Learning", "Self-Directedness"],
+            "link": "https://risingtide.org",
+            "logo": "/icons/risingtide-logo.png"
+        }
+    ]
+}

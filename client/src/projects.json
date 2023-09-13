@@ -2,68 +2,70 @@
     "projects": [
         {
             "title": "Avesha E2E Testing",
-            "images": [],
+            "link": "https://avesha.io",
             "files": [],
             "links": [],
-            "logos": ["/icons/avesha-logo.svg"],        
-            "skills": ["Javascript", "GoLang", "CypressJS", "Ginkgo", "HTML", "Kubernetes", "Docker", "GitHub Actions", "Documentation", "Unit Testing", "Written/Verbal Communication", "Technical Communication"],
+            "logo": "/icons/avesha-logo.svg",
+            "technology": ["JavaScript", "GoLang", "CypressJS", "Ginkgo", "HTML", "Docker", "Linux", "Jenkins", "Github Actions"],     
+            "skills": ["E2E Testing", "Frontend Testing", "Containerization", "Kubernetes", "Github Standards", "Technical Documentation", "Technical Communication", "Time Management"],
             "description": "Working as a part of the testing team, I developed E2E test suites for Avesha's Kubeslice UI product. I designed and documented the tests to be developed before beginning. I wrote tests using a container-in-container environment, utilizing the Ginkgo GoLang testing framework to validate the deployment of the application onto a Kubernetes cluster. The Ginkgo tests spawned Docker containers to run the Cypress JS tests, which tested the frontend UI and the accuracy of the information in the UI as compared to our backend data. The containerized environment made the testing more efficient as all memory was deallocated once the tests finished running. I developed test summaries for each testing clause, and presented my work to my peers at the company. This project taught me a lot about the importance of documentation and communication within the flow of a company with a lot of moving pieces." 
         },
         {
             "title": "Avesha Kubeslice Deployment Testing",
-            "images": [],
+            "link": "https://avesha.io",
             "files": [],
             "links": [],
-            "logos": ["/icons/avesha-logo.svg"],         
-            "skills": ["Bash", "Linux", "GoLang", "Ginkgo", "AWS", "GCP", "Kubernetes"],
+            "logo": "/icons/avesha-logo.svg",   
+            "technology": ["Linux", "Bash", "GoLang", "Ginkgo", "AWS/EKS", "GCP/GKE"],      
+            "skills": ["Deployment Testing", "Backend Testing", "Containerization", "Kubernetes", "Github Standards", "Technical Documentation", "Technical Communication", "Time Management"],
             "description": "As a part of the testing team, I developed tests to validate the deployment of Avesha's kubeslice product connecting an AWS K8s cluster with a GCP K8s cluster. I utilized Bash and the AWS and gcloud clis to fetch deployment information and pod distribution to validate the deployment of Avesha's Kubeslice software. I developed suites using GoLang's Ginkgo framework to test the connectivity between the clusters, ensuring that the tests could be easily scaled for a 3-or-more cluster deployment. This project taught me the importance of setting clear goals and documenting them before beginning work on a project to get an accurate estimate of the timeline and scale of a project."
         },
         {
             "title": "Ball-IQ",
             "subtitle": "Basketball Stats and Projections",
-            "images": [],
             "files": [],
-            "logos": ["/icons/basketball-icon.svg", "/icons/basketball-hoop-icon.svg"],
-            "git": "https://github.com/sephturner/BallIQ",          
-            "skills": ["MySQL", "ExpressJS", "React", "NodeJS", "HTML", "CSS", "Python", "Machine Learning", "ChakraUI", "UX Design"],
+            "logo": "/icons/basketball-icon.svg",
+            "git": "https://github.com/sephturner/BallIQ",
+            "technology": ["MySQL", "ExpressJS", "ReactJS", "NodeJS", "HTML", "CSS", "Python"],      
+            "skills": ["APIs", "Database Design", "Machine Learning", "Data Handling", "UX Design", "HTML/React Libraries"],
             "description": "Ball-IQ is a full stack project I created using a MySQL database, Expressjs backend hosting, Reactjs UI components, and nodejs packaging. A user can search for any currently active NBA player, and Ball-IQ will display their career statistics for regular season and playoffs. To save space on my local hard-drive, I decided to store only the information necessary to make an API request to the official nba api using the python nba_api package. I implemented 2 machine learning algorithms in the backend using the python sklearn package to predict a player's point per game totals in the following season. I used a K-Nearest-Neighbor weighted average regression on scoring stats and a separate implementation using principle component analysis to reduce the dimensionality of the data to a single dimension, then running a linear regression between the principle component and a player's point per game total. This project is still a work in progress, and it has taught me the importance of prioritizing tasks, planning ahead of time, and how to do my own research to learn about and implement new technologies. "
         },
         {
             "title": "Rate Your Dining",
             "subtitle": "College Campus Dining Review Forum",
-            "images": [],
             "files": [],
-            "logos": ["/icons/utensils-icon.svg", "/icons/bowl-icon.svg"],
+            "logo": "/icons/bowl-icon.svg",
             "git": "https://github.com/wmarchesi123/rate-your-dining-webapp",
-            "skills": ["React", "Firestore", "Firebase", "HTML", "CSS", "ChakraUI", "UX Design"],
+            "technology": ["Firebase", "Firestore", "React", "HTML", "CSS"],
+            "skills": ["Backendless Database Development", "UX Design", "HTML/React Libraries"],
             "description": "Working as a part of a team for my Software Engineering course, I worked with a team member to design and implement the frontend UX for a review forum for college campus dining. Each menu item has a corresponding forum to give a like rating for the item and a text-post review of the menu item. This project taught me about the UX drafting process and how important it is to design the UX before beginning work on a project. We implemented the frontend using React's ChakraUI library. I also learned a lot about how to work as a part of a team in the context of design, which is more subjective than a lot of the experience I previously had."
         },
         {
             "title": "Recommendify",
             "subtitle": "Spotify Stats & Recommendations",
-            "images": [],
             "files": [],
-            "logos": ["/icons/spotify-logo.svg", "/icons/music-note-icon.svg"],
+            "logo": "/icons/spotify-logo.svg",
             "git": "https://github.com/sephturner/Recommendify",
-            "skills": ["Javascript", "APIs", "NodeJS", "HTML", "CSS", "ExpressJS", "UX Design"],
+            "technology": ["JavaScript", "ExpressJS", "NodeJS", "HTML", "CSS"],
+            "skills": ["APIs", "UX Design", "Using Open Source Code", "Data Handling"],
             "description": "I developed a simple backendless web application using expressjs routing. The frontend was written in raw html and css, with api calls being made using HTTP requests written in javascript. The frontend is connected to Spotify's login using their open source sign-in validation, which was then used to fetch listener information and recommeend songs based upon their top songs and artists using Spotify's recommendation api endpoint. This was the first web application I worked on, and I learned how web routing works as well as how to format and handle API calls and HTTP requests. Writing the application in raw html and css taught me the purpose of using frameworks and libraries for frontend development such as React and bootstrap, which I have used in my later projects."
         },
         {
             "title": "2-Player Snake",
-            "images": [],
             "download": "MultiSnake.zip",
-            "logos": ["/icons/snake-icon.svg", "/icons/apple-icon.svg"],
-            "git": "https://github.com/sephturner/2-Player-Snake",        
-            "skills": ["Java", "Code Organization", "GUI-Design", "Processing 3.0", "Data Structures", "GUI Design"],
+            "logo": "/icons/snake-icon.svg",
+            "git": "https://github.com/sephturner/2-Player-Snake",
+            "technology": ["Java", "Processing 3.0"],      
+            "skills": ["Code Organization", "Object-Oriented Programming", "GUI Design", "Data Structures"],
             "description": "Local multiplayer snake game developed using Java without the use of others' code. I decided to do this to better understand object-oriented programming, GUI design, and data structures. I created a GUI from scratch, which allowed me to better understand what is going on behind the hood of a graphical interface. I had to think creatively about how to make something that I previously took for granted. This project gave me perspective on how to define and achieve goals, the importance of documentation, and the value of working on personal projects to improve or learn new skillsets."
         },
         {
             "title": "Socket Chess",
-            "images": [],
             "files": [],
             "links": [],
-            "logos": ["/icons/queen-chess-icon.svg", "/icons/knight-chess-icon.svg"],          
-            "skills": ["Python", "Socket Programming", "Network Programming", "Verbal Communication", "Task Prioritization", "Project Planning", "TCP/UDP"],
+            "logo": "/icons/queen-chess-icon.svg",    
+            "technology": ["Python", "TCP/UDP"],      
+            "skills": ["Socket Programming", "Network Programming", "Verbal Communication", "Task Prioritization", "Project Planning"],
             "description": "A partner and I created a peer-to-peer command-line chess game for our Network Programming course. The goal was to create a chess application in Python that would allow 2 players to play chess using a TCP protocol and a full-fledged GUI to go along with it. As we worked on the project, we realized that our aspirations were greater than the scope of the project, and shifted our focus to a terminal-based chess application. We used a UDP connection with python socket programming to send a move to the opposing player, who then had as long as they pleased to respond with a move of their own. We implemented a system that checked whether a given move was valid, and checked the state of the game for a winner after every move. Although the final product was rudimentary, this project taught me a lot about the software development process. I learned how to manage workload between 2 people, which allowed each of us to play to our own strengths to get the project done more efficiently. I also learned how important it is to manage time and stay focused on a goal; sometimes it may feel like the right time create images of the chess-pieces, but that time is better spent working on the functionality of the game."
         }
     ]

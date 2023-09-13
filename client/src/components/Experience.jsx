@@ -1,54 +1,57 @@
-function Experience (props) {
+import React, { useState } from 'react';
 
-    const { where, when, department, description, skills, link, ps, logo } = props.details;
+function Experience(props) {
+  const { where, when, department, description, skills, link, logo, technology } = props.details;
+  const bottom = props.bottom;
 
-    const skillsSection = (
-        skills && (
-            <section className='experience-skills'>
-                <h3 className='experience-skills-title'>Relevant Skills Learned</h3>
-                <ol className='experience-skill-list'>
+  const [bodyVisible, setBodyVisible] = useState(false);
+
+  const toggleBodyVisibility = () => {
+    setBodyVisible(!bodyVisible);
+  };
+
+  const handleAnchorClick = (e) => {
+    e.stopPropagation();
+  };
+
+  return (
+    <div className={`item-card ${bottom ? 'bottom' : ''}`}>
+      <section className='item-header' onClick={toggleBodyVisibility}>
+        <section className='item-header-info'>
+          <a href={`${link}`} target='_blank' rel='noreferrer' className='item-link large' onClick={handleAnchorClick}>
+            <img className='item-logo large' alt="" src={`${logo}`} />
+          </a>
+          <section className='item-titlecard'>
+            <h2 className='item-title'>{where}</h2>
+            <p className='item-where'>{department}</p>
+            <p className='item-when'>{when}</p>
+          </section>
+        </section>
+        <div className='item-header-box'>
+          <ol className='box-list'>
+            {technology.map((item, index) => (
+              <li key={index} className='box-list-item'>{item}</li>
+            ))}
+          </ol>
+        </div>
+      </section>
+      <div className={`item-drawer ${bodyVisible ? 'visible' : ''}`}>
+        <section className='item-body'>
+            <section className='item-description'>
+                {description}
+            </section>
+            <section className='bullet-list-box'>
+                <h2 className='bullet-list-title'>Concepts Learned</h2>
+                <ol className='bullet-list'>
                     {skills.map((item, index) => (
-                        <li key={index} className='experience-skill'>{item}</li>
+                        <li key={index} className='bullet-list-item'>{item}</li>
                     ))}
                 </ol>
             </section>
-        )
-    );
-
-    const logoSection = (
-        <section className='experience-logo-container'>
-            <img className='experience-logo' alt="" src={`${logo}`}/>
         </section>
-    );
-
-    return (
-        <div className='experience-card'>
-            <section className='experience-header'>
-                <a href={`${link}`} target='_blank' rel='noreferrer' className='experience-title'>{where}</a>
-                <p className='experience-where'>{department}</p>
-                {ps && (
-                    <p className='experience-ps'>{ps}</p>
-                )}
-                <p className='experience-when'>{when}</p>
-            </section>
-            <section className='experience-body'>
-                {props.even ? (
-                    logoSection
-                ) : (
-                    skillsSection
-                )}
-                <section className='experience-description'>
-                    {/* <h3 className='experience-description-title'>Description</h3> */}
-                    <p className='experience-description-text'>{description}</p>
-                </section>
-                {props.even ? (
-                    skillsSection
-                ) : (
-                    logoSection
-                )}
-            </section>
-        </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default Experience;

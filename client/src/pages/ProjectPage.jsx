@@ -6,12 +6,10 @@ function ProjectPage() {
     const projectData = projects.projects;
 
     return (
-        <div className='projects'>
-
+        <div className='page'>
             {projectData.map((item, index) => (
-                <Project key={index} details={item}/>
+                <Project key={index} details={item} bottom={(index === projectData.length-1)}/>
             ))}
-
         </div>
     )
 }

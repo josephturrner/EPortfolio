@@ -7,10 +7,11 @@ import {
   RouterProvider,
   Outlet
 } from 'react-router-dom';
-import './styles/index.css';
-import Home from './pages/Home';
+import './index.css';
+import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage';
 import ExperiencePage from './pages/ExperiencePage';
+import EducationPage from './pages/EducationPage'
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -20,17 +21,17 @@ import Footer from './components/Footer';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Outlet />}>
-      <Route index element={<Home />} />
+      <Route index element={<HomePage />} />
       <Route path="experience" element={<ExperiencePage/>}/>
       <Route path="projects" element={<ProjectPage/>}/>      
+      <Route path="education" element={<EducationPage/>}/>      
     </Route>
   )
 )
 
 function App() {
   return (
-    <div className='page'>
-        <title>{'<Joseph Turner/>'}</title>
+    <div className='root-site'>
         <Header/>
         <RouterProvider router={router}/>
         <Footer/>

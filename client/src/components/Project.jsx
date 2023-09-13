@@ -1,51 +1,72 @@
+import React, { useState } from 'react';
+
 function Project(props) {
-  const { title, description, images, skills, download, git, subtitle, logos } = props.details;
+  const { title, description, link, skills, download, git, subtitle, logo, technology } = props.details;
+  const bottom = props.bottom;
+
+  const [bodyVisible, setBodyVisible] = useState(false);
+
+  const toggleBodyVisibility = () => {
+    setBodyVisible(!bodyVisible);
+  };
+
+  const handleAnchorClick = (e) => {
+    e.stopPropagation();
+  };
 
   return (
-    <div className='project-card'>
-      <section className='project-header'>
-        <section className='project-hook'>
-          <img className='project-icon' alt='' src={`${logos[0]}`}/>
-          <section className='project-titlecard'>
-            <h2 className='project-title'>{title}</h2>
-            {subtitle && (
-              <p className='project-subtitle'>{subtitle}</p>
+    <div className={`item-card ${bottom ? 'bottom' : ''}`}>
+      <section className='item-header' onClick={toggleBodyVisibility}>
+        <section className='item-header-info'>
+          <section className='logo-container'>
+            {link ? (
+              <a href={`${link}`} target='_blank' rel='noreferrer' className='item-link' onClick={handleAnchorClick}>
+                <img className={`item-logo ${!(git || download) ? 'medium' : ''}`} alt='' src={`${logo}`} />
+              </a>
+            ) : (
+              <img className={`item-logo lone ${!(git || download) ? 'medium' : ''}`} alt='' src={`${logo}`} />
             )}
-          </section>
-          <img className='project-icon' alt='' src={`${(logos.length > 1) ? logos[1] : logos[0]}`}/>
-        </section>
-        {(git || download) && (
-          <section className='project-external'>
             {git && (
-              <a className='project-link' href={`${git}`} target="_blank" rel="noreferrer">
-                <img className='project-button-image' src='/icons/git-logo.svg' alt='Git'/>
+              <a className='item-link' href={`${git}`} target="_blank" rel="noreferrer">
+                <img className='item-logo' src='/icons/git-logo.svg' alt='Git'/>
               </a>
             )}
             {download && (
-              <a className='project-link' href={`/project-files/${download}`} download>
-                <img className='project-button-image' src='/icons/download-icon.svg' alt='Download'/>
+              <a className='item-link' href={`/project-files/${download}`} download>
+                <img className='item-logo' src='/icons/download-icon.svg' alt='Download'/>
               </a>
             )}
           </section>
-        )}
+          <section className='item-titlecard'>
+              <h2 className='item-title'>{title}</h2>
+              {subtitle && (
+                <p className='item-sub'>{subtitle}</p>
+              )}
+          </section>
+        </section>
+        <div className='item-header-box'>
+          <ol className='box-list'>
+            {technology.map((item, index) => (
+              <li key={index} className='box-list-item'>{item}</li>
+            ))}
+          </ol>
+        </div>
       </section>
-      {skills.length > 0 && (
-        <ol className='project-skills'>
-          {skills.map((item, index) => (
-            <li className='project-skill' key={index}>{item}</li>
-          ))}
-        </ol>
-      )}
-      <p className='project-description'>
-        {description}
-      </p>
-      {images.length > 0 && (
-        <ol className='project-images'>
-          {images.map((item, index) => (
-            <img src={`${item}`} className='project-image' alt='' key={index} />
-          ))}
-        </ol>
-      )}
+      <div className={`item-drawer ${bodyVisible ? 'visible' : ''}`}>
+        <section className='item-body'>
+          <section className='item-description'>
+            {description}
+          </section>
+          <section className='bullet-list-box'>
+            <h2 className='bullet-list-title'>Concepts Learned</h2>
+            <ol className='bullet-list'>
+              {skills.map((item, index) => (
+                <li key={index} className='bullet-list-item'>{item}</li>
+              ))}
+            </ol>
+          </section>
+        </section>
+      </div>
     </div>
   );
 }

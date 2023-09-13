@@ -1,5 +1,4 @@
 import Experience from '../components/Experience'
-import '../styles/experiencepage.css'
 import experience from '../experience.json'
 
 
@@ -8,9 +7,9 @@ function ExperiencePage() {
     const experienceData = experience.experience;
 
     return (
-        <div className='experience'>
+        <div className='page'>
             {experienceData.map((item, index) => (
-                <Experience key={index} even={index%2===0} details={item}/>
+                <Experience key={index} details={item} bottom={(index === experienceData.length-1)}/>
             ))}
         </div>
     )

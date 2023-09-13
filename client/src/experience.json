@@ -5,19 +5,20 @@
             "department": "DevOps Engineer",
             "when": "January 2022 - March 2023",
             "description": "I worked as a DevOps Engineer intern at Avesha Systems as a part of the deployment and frontend testing teams. As a member of the deployment testing team, I utilized AWS and GCP tools to deploy Avesha's Kubeslice product and validate the deployment. As a member of the frontend testing team, I designed, documented, and implemented test suites written in Avesha's containerized testing framework. Avesha opened my eyes to the importance of keeping up with emerging technologies and the importance of open and clear communication amongst team members. I learned how to use software engineering tools such as Bitbucket and Jira, and learned how to uphold industry standards working as a contributor of a company-managed repository including PR etiquette and version control. ",
-            "skills": ["Containerization", "Kubernetes", "Git", "Jira", "Bitbucket", "Documentation", "Deployment Testing", "Technical Communication"],
+            "skills": ["E2E Testing", "Deployment Testing", "Containerization", "Kubernetes", "Technical Documentation", "Technical Communication"],
+            "technology": ["Linux", "Bash", "GoLang", "JavaScript", "NodeJS", "CypressJS", "GoLang", "Ginkgo", "Docker", "EKS", "GKE"],
             "link": "https://avesha.io",
             "logo": "/icons/avesha-logo.svg"
         },
         {
-            "where": "Wentworth Institute of Technology",
-            "department": "Bachelor's of Science in Computer Science",
-            "ps": "Minors in Applied Mathematics & Computer Networking",
-            "when": "September 2019 - August 2023",
-            "description": "I completed my Bachelor's of Science in Computer Science at Wentworth Insitute of Technology in August of 2023. As I gained a better understanding of what computer science is, I found a love for web development, which was my focus for the latter half of my time at Wentworth, and inspired me to take on a double-minor. As a part of my Mathematics minor, I took a Machine Learning course that opened a new interest in data-driven mathematics and backend data handling, which I hope to apply in my career as a full-stack developer. In pursuit of the Computer Networking minor, I learned how internet protocols and routing standards work, which improved my understanding of full-stack development and computer security.",
-            "skills": ["Algorithms", "Data Structures", "Databases", "Web Development", "Operating Systems", "Machine Learning", "Software Engineering", "Attention to Detail"],
-            "link": "https://wit.edu",
-            "logo": "/icons/wentworth-logo.svg"
+            "where": "Staples Inc.",
+            "department": "Sales Associate",
+            "when": "March 2019 - August 2020",
+            "description": "I worked as a general employee at Staples in Plymouth, MA. My role changed each shift, but I spent time as a cashier, tech associate, sales associate, and general employee. As a tech associate, I assisted customers in their technical difficulties ranging from removing viruses to finding the right charging cable. I learned how to communicate with people who did not come from a tech background and how to ask the right series of questions to identify a problem and a solution. I maintained a clean, organized work environment to hand off to the next shift.",
+            "skills": ["IT Support", "Customer Service", "Sales", "Technical Communication"],
+            "technology": ["Windows", "Linux"],
+            "link": "https://stores.staples.com/ma/plymouth/131-samoset-street-(rt-44)",
+            "logo": "/icons/staples-logo.svg"
         }
     ]
 }
