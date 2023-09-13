@@ -41,7 +41,7 @@ function Experience(props) {
                 {description}
             </section>
             <section className='bullet-list-box'>
-                <h2 className='bullet-list-title'>Concepts Learned</h2>
+                <h2 className='list-title'>Concepts Learned</h2>
                 <ol className='bullet-list'>
                     {skills.map((item, index) => (
                         <li key={index} className='bullet-list-item'>{item}</li>
