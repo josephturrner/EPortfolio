@@ -10,7 +10,7 @@
         {
             "title": "Data Science",
             "skills": ["Machine Learning", "Python", "R", "Statistics"],
-            "description": "I have a passion for numbers, and I always have. During my time at Wentworth, I decided to pursue a mathematics minor so that I could continue my career in data, analystics, and mathematics. I completed machine learning, multivariable calculus, and probability and statistics at Wentworth, which has provided me with the conceptual and programming tools necessary to analyze data to pick out useful insights such as Python and R.",
+            "description": "I have a passion for numbers, and I always have. During my time at Wentworth, I decided to pursue a mathematics minor so that I could continue my career in data, analystics, and mathematics. I completed machine learning, multivariable calculus, and probability and statistics at Wentworth, which has provided me with the conceptual and programming tools necessary to analyze and handle data.",
             "projects": [
                 {
                     "name": "Ball IQ",
@@ -41,8 +41,8 @@
         },
         {
             "title": "DevOps",
-            "skills": ["Linux", "Windows", "Kubernetes", "Docker", "JavaScript", "Java", "Python", "Automation", "E2E Testing", "Acceptance Testing", "Github Actions", "Jenkins", "GCP/GKE", "AWS/EKS", "Attention to Detail"],
-            "description": "I have always thrived in positions that require attention to detail and problem-solving. I have interests in maintaining the organization and cleanliness of a software environment. I enjoy spending time identifying weak points and places to improve in the context of a large-scale project.",
+            "skills": ["Linux", "Windows", "Kubernetes", "Docker", "JavaScript", "Java", "Python", "Automation", "E2E Testing", "Acceptance Testing", "Github Actions", "Jenkins", "GCP/GKE", "AWS/EKS"],
+            "description": "I thrive in positions that require attention to detail and problem-solving. I have interests in maintaining the organization and cleanliness of a software environment. I enjoy spending time identifying weak points and places to improve in the context of a large-scale project.",
             "projects": [
                 {
                     "name": "Avesha",
@@ -50,6 +50,21 @@
                 }
             ],
             "courses": ["Software Engineering", "Algorithms", "Data Structures", "Discrete Math", "Databases"]
+        }
+    ],
+    "experience": [
+        {
+            "where": "Wentworth Institute of Technology",
+            "department": "Bachelor's of Science in Computer Science",
+            "ps": "Minors in Mathematics & Computer Networking",
+            "skills": ["Software Engineering", "Web Development", "Algorithms", "Data Structures", "Discrete Math", "Databases" ],
+            "logo": "/icons/wit-logo.svg"
+        },
+        {
+            "where": "Avesha Systems",
+            "department": "DevOps Engineer",
+            "skills": ["E2E Testing", "Acceptance Testing", "GoLang", "JavaScript", "AWS", "GCP", "Kubernetes", "Docker", "Technical Documentation"],
+            "logo": "/icons/avesha-logo.svg"
         }
     ]
 }

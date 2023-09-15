@@ -45,7 +45,7 @@ function Education(props) {
           </section>
           <section className='bullet-list-box'>
             <h2 className='list-title'>Relevant Courses</h2>
-            <ol className='bullet-list'>
+            <ol className='bullet-list double'>
               {courses.map((item, index) => (
                 <li key={index} className='bullet-list-item'>{item}</li>
               ))}

@@ -59,7 +59,7 @@ function Project(props) {
           </section>
           <section className='bullet-list-box'>
             <h2 className='list-title'>Concepts Learned</h2>
-            <ol className='bullet-list'>
+            <ol className='bullet-list double'>
               {skills.map((item, index) => (
                 <li key={index} className='bullet-list-item'>{item}</li>
               ))}

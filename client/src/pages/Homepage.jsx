@@ -10,8 +10,13 @@ function HomePage() {
             <Profile profile={homepage.profile} socials={socials.socials}/>
             <section className='side-by-side'>
                 {homepage.careerpaths.map((item, index) => (
-                    <Career career={item}/>
+                    <Career career={item} key={index}/>
                 ))}
+            </section>
+            <section className='side-by-side'>
+                {/* {homepage.experience.map((item, index) => (
+                    
+                ))} */}
             </section>
         </div>
     )
