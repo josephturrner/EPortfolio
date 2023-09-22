@@ -9,11 +9,11 @@ import {
 } from 'react-router-dom';
 import './index.css';
 import HomePage from './pages/HomePage';
-import ProjectPage from './pages/ProjectPage';
-import ExperiencePage from './pages/ExperiencePage';
-import EducationPage from './pages/EducationPage'
+import ItemPage from './pages/ItemPage';
 import Header from './components/Header';
+import HeaderTwo from './components/HeaderTwo';
 import Footer from './components/Footer';
+import infoData from './items.json';
 
 // import reportWebVitals from './reportWebVitals';
 
@@ -22,9 +22,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Outlet />}>
       <Route index element={<HomePage />} />
-      <Route path="experience" element={<ExperiencePage/>}/>
-      <Route path="projects" element={<ProjectPage/>}/>      
-      <Route path="education" element={<EducationPage/>}/>      
+      <Route path="experience" element={<ItemPage info={infoData.experience}/>}/>
+      <Route path="projects" element={<ItemPage info={infoData.projects}/>}/>      
+      <Route path="education" element={<ItemPage info={infoData.education}/>}/>      
     </Route>
   )
 )
@@ -32,9 +32,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className='root-site'>
-        <Header/>
+        {/* <HeaderTwo/> */}
         <RouterProvider router={router}/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

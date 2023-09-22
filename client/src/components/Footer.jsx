@@ -13,7 +13,7 @@ function Footer() {
                     <p className='text-box-text'>{phone}</p>
                     <p className='text-box-text'>{gmail}</p>
                 </section>
-                <section className='contact-logos'>
+                <section className='footer-contacts'>
                     <a href={`mailto: ${gmail}`} className='item-link'>
                         <img className='item-logo footer' alt="" src='/icons/gmail-logo.svg'/>
                     </a>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-function Project(props) {
-  const { title, description, link, skills, download, git, subtitle, logo, technology } = props.details;
+function Item(props) {
+  const { title, subtitle, ps, when, skills, concepts, description, logo, link, git, download } = props.details;
   const bottom = props.bottom;
 
   const [bodyVisible, setBodyVisible] = useState(false);
@@ -18,7 +18,7 @@ function Project(props) {
     <div className={`item-card ${bottom ? 'bottom' : ''}`}>
       <section className='item-header' onClick={toggleBodyVisibility}>
         <section className='item-header-info'>
-          <section className='logo-container'>
+        <section className='logo-container'>
             {link ? (
               <a href={`${link}`} target='_blank' rel='noreferrer' className='item-link' onClick={handleAnchorClick}>
                 <img className={`item-logo ${!(git || download) ? 'medium' : ''}`} alt='' src={`${logo}`} />
@@ -38,15 +38,21 @@ function Project(props) {
             )}
           </section>
           <section className='item-titlecard'>
-              <h2 className='item-title'>{title}</h2>
-              {subtitle && (
-                <p className='item-sub'>{subtitle}</p>
-              )}
+            <h2 className='item-title'>{title}</h2>
+            {subtitle && (
+              <p className='item-title subtitle'>{subtitle}</p>
+            )}
+            {ps && (
+              <p className='item-title subtitle'>{ps}</p>
+            )}
+            {when && (
+              <p className='item-title when'>{when}</p>
+            )}
           </section>
         </section>
         <div className='item-header-box'>
           <ol className='box-list'>
-            {technology.map((item, index) => (
+            {skills.map((item, index) => (
               <li key={index} className='box-list-item'>{item}</li>
             ))}
           </ol>
@@ -54,21 +60,21 @@ function Project(props) {
       </section>
       <div className={`item-drawer ${bodyVisible ? 'visible' : ''}`}>
         <section className='item-body'>
-          <section className='item-description'>
-            {description}
-          </section>
-          <section className='bullet-list-box'>
-            <h2 className='list-title'>Concepts Learned</h2>
-            <ol className='bullet-list double'>
-              {skills.map((item, index) => (
-                <li key={index} className='bullet-list-item'>{item}</li>
-              ))}
-            </ol>
-          </section>
+            <section className='item-description'>
+                {description}
+            </section>
+            <section className='bullet-list-box'>
+                <h2 className='list-title'>Concepts Learned</h2>
+                <ol className='bullet-list double'>
+                    {concepts.map((item, index) => (
+                        <li key={index} className='bullet-list-item'>{item}</li>
+                    ))}
+                </ol>
+            </section>
         </section>
       </div>
     </div>
-  );
+  )
 }
 
-export default Project;
+export default Item;
