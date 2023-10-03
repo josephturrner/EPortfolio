@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import Education from './Education';
+
 function About(props) {
 
     const homepage = props.homepage;
@@ -28,32 +30,18 @@ function About(props) {
                     <h2 className='about-name'>{homepage.profile.name}</h2>
                     <p className='about-description'>{homepage.profile.description}</p>
                 </section>
-                <section className='education'>
-                    <img className='education-photo' alt='' src={homepage.education.logo}/>
-                    <section className='education-info'>
-                        <section>
-                            <p className='education-title'>{homepage.education.title}</p>
-                            <p className='education-title subtitle'>{homepage.education.subtitle}</p>
-                            <p className='education-title subtitle'>{homepage.education.ps}</p>
-                        </section>
-                        <ol className='education-skills'>
-                            {homepage.education.skills.map((item, index) => (
-                                <li className='education-skill' key={index}>{item}</li>
-                            ))}
-                        </ol>
-                    </section>
-                </section>
+                <Education education={homepage.education}/>
             </section>
             <section className={`about-box profile ${isInView ? "in-view" : ""}`}>
                 <img className='about-photo' alt='' src='/images/skateboard-mountains.jpg'/>
-                <section className='side-by-side even'>
-                    <a href={`mailto: ${homepage.contact.gmail}`} className='header-link'>
+                <section className='row'>
+                    <a href={`mailto: ${homepage.contact.gmail}`} className='link-item'>
                         <img src='/icons/gmail-logo.svg' alt='' className='contact-logo'/>
                     </a>
-                    <a href={`${homepage.contact.linkedin}`} className='header-link'>
+                    <a href={`${homepage.contact.linkedin}`} className='link-item'>
                         <img src='/icons/linkedin-logo.svg' alt='' className='contact-logo'/>
                     </a>
-                    <a href={`${homepage.contact.git}`} className='header-link'>
+                    <a href={`${homepage.contact.git}`} className='link-item'>
                         <img src='/icons/git-logo.svg' alt='' className='contact-logo'/>
                     </a>
                 </section>

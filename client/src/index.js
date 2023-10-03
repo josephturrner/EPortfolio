@@ -9,23 +9,12 @@ import {
 } from 'react-router-dom';
 import './index.css';
 import HomePage from './pages/HomePage';
-import ItemPage from './pages/ItemPage';
-import NewHeader from './components/NewHeader';
-import Header from './components/Header';
-import HeaderTwo from './components/HeaderTwo';
-import Footer from './components/Footer';
-import infoData from './items.json';
-
-// import reportWebVitals from './reportWebVitals';
 
 // router and routes
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Outlet />}>
-      <Route index element={<HomePage />} />
-      <Route path="experience" element={<ItemPage info={infoData.experience}/>}/>
-      <Route path="projects" element={<ItemPage info={infoData.projects}/>}/>      
-      <Route path="education" element={<ItemPage info={infoData.education}/>}/>      
+      <Route index element={<HomePage />} />    
     </Route>
   )
 )
@@ -34,7 +23,6 @@ function App() {
   return (
     <div className='root-site'>
         <RouterProvider router={router}/>
-        {/* <Footer/> */}
     </div>
   )
 }

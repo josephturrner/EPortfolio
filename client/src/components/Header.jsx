@@ -1,34 +1,34 @@
-import socials from '../socials.json';
+import React, { useState, useEffect } from 'react';
 
-function Header() {
+function Header(props) {
 
-    const { git, gmail, linkedin } = socials.socials
+    const header = props.header;
+    const [headerPadding, setheaderPadding] = useState('70px');
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+
+            console.log(scrollY);
+
+            const newheaderPadding = 70 - scrollY;
+
+            const updatedheaderPadding = `${Math.max(0, newheaderPadding)}px`;
+
+            setheaderPadding(updatedheaderPadding);
+        };
+  
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
-        <header className='header'>
-            <img src='/icons/portfolio-icon.svg' alt='' className='item-logo'/>
-            {/* <div className='header-title'>
-                <h2 className='header-name'>Joseph Turner</h2>
-                <p className='header-job'>Software Engineer</p>
-            </div> */}
-            <section className='header-links'>
-                <a href="/" className='header-link'>Home</a>
-                <a href="/projects" className='header-link'>Projects</a>
-                <a href="/experience" className='header-link'>Experience</a>
-                <a href="/education" className='header-link'>Education</a>
-            </section>
-            <section className='header-contacts'>
-                <a href={`mailto: ${gmail}`} className='header-link'>
-                    <img src='/icons/gmail-logo.svg' alt='' className='item-logo header'/>
-                </a>
-                <a href={`${linkedin}`} className='header-link'>
-                    <img src='/icons/linkedin-logo.svg' alt='' className='item-logo header'/>
-                </a>
-                <a href={`${git}`} className='header-link'>
-                    <img src='/icons/git-logo.svg' alt='' className='item-logo header'/>
-                </a>
-            </section>
-        </header>
+        <div className={`header`} style={{paddingTop: headerPadding}}>
+            <h2 className='header-name'>{header.name}</h2>
+        </div>
     )
 }
 

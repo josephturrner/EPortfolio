@@ -1,7 +1,6 @@
 import React, {useState, useEffect } from 'react';
-import { Element } from 'react-scroll';
 
-import NewHeader from '../components/NewHeader';
+import Header from '../components/Header';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
@@ -27,7 +26,7 @@ function HomePage() {
     useEffect(() => {
 
         const handleScroll = () => {
-            const experience = document.querySelector('.experience-section');
+            const experience = document.querySelector('.experience');
             if (experience) {
                 const rect = experience.getBoundingClientRect();
                 setIsInView(rect.top + rect.height/10 < window.innerHeight);
@@ -43,16 +42,16 @@ function HomePage() {
 
     return(
         <div className='home'>
-            <NewHeader header={homepage.header}/>
+            <Header header={homepage.header}/>
             <section className='content'>
-                <div className='centered-content'>
+                <div className='intro'>
                     <img className='intro-pic' src={homepage.profile.photo} alt='' />
                     <p className={`intro-more ${showIntro ? 'visible': ''}`}>Scroll to Learn More</p>
-                    <h2 className='header-title'>{homepage.header.title}</h2>
+                    <h2 className='intro-title'>{homepage.header.title}</h2>
                 </div>
                 <About homepage={homepage}/>
                 <Skills skills={homepage.skills}/>
-                <section className={`experience-section ${isInView ? 'in-view': ''}`}>
+                <section className={`experience ${isInView ? 'in-view': ''}`}>
                     {homepage.experience.map((item, index) => (
                         <Work experience={item} key={index}/>
                     ))}
