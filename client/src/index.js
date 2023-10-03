@@ -10,6 +10,7 @@ import {
 import './index.css';
 import HomePage from './pages/HomePage';
 import ItemPage from './pages/ItemPage';
+import NewHeader from './components/NewHeader';
 import Header from './components/Header';
 import HeaderTwo from './components/HeaderTwo';
 import Footer from './components/Footer';
@@ -32,7 +33,6 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className='root-site'>
-        {/* <HeaderTwo/> */}
         <RouterProvider router={router}/>
         {/* <Footer/> */}
     </div>
