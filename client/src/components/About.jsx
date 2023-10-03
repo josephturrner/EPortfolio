@@ -1,11 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import homepage from '../homepage.json';
-import socials from '../socials.json';
 
-function About() {
+function About(props) {
+
+    const homepage = props.homepage;
+    const [isInView, setIsInView] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const element = document.querySelector('.about'); // Select the '.about' element
+            if (element) {
+                const rect = element.getBoundingClientRect();
+                setIsInView(rect.top + rect.height/4 < window.innerHeight);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <section className='about'>
-            <section className='about-box summary'>
+        <section className={`about ${isInView ? "in-view" : ""}`}>
+            <section className={`about-box summary ${isInView ? "in-view" : ""}`}>
                 <section className='top-bottom'>
                     <h2 className='about-name'>{homepage.profile.name}</h2>
                     <p className='about-description'>{homepage.profile.description}</p>
@@ -26,16 +44,16 @@ function About() {
                     </section>
                 </section>
             </section>
-            <section className='about-box profile'>
+            <section className={`about-box profile ${isInView ? "in-view" : ""}`}>
                 <img className='about-photo' alt='' src='/images/skateboard-mountains.jpg'/>
                 <section className='side-by-side even'>
-                    <a href={`mailto: ${socials.gmail}`} className='header-link'>
+                    <a href={`mailto: ${homepage.contact.gmail}`} className='header-link'>
                         <img src='/icons/gmail-logo.svg' alt='' className='contact-logo'/>
                     </a>
-                    <a href={`${socials.linkedin}`} className='header-link'>
+                    <a href={`${homepage.contact.linkedin}`} className='header-link'>
                         <img src='/icons/linkedin-logo.svg' alt='' className='contact-logo'/>
                     </a>
-                    <a href={`${socials.git}`} className='header-link'>
+                    <a href={`${homepage.contact.git}`} className='header-link'>
                         <img src='/icons/git-logo.svg' alt='' className='contact-logo'/>
                     </a>
                 </section>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import homepage from '../homepage.json'
-import socials from '../socials.json'
 
-function NewHeader() {
+function NewHeader(props) {
+
+    const header = props.header;
     const [headerPadding, setheaderPadding] = useState('70px');
 
     useEffect(() => {
@@ -32,7 +32,7 @@ function NewHeader() {
 
     return (
         <div className={`header`} style={{paddingTop: headerPadding}}>
-            <h2 className='header-name'>{homepage.header.name}</h2>
+            <h2 className='header-name'>{header.name}</h2>
         </div>
     )
 }
