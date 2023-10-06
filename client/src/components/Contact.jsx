@@ -1,9 +1,11 @@
-function Contact(props) {
+import { forwardRef } from "react";
+
+const Contact = forwardRef((props, ref) => {
 
     const contact = props.contact;
 
     return (
-        <section className='contact'>
+        <section className='contact' ref={ref}>
             <div className='row'>
                 <div className='contact-item'>
                     <img className='contact-logo bottom telephone' src='/icons/telephone.svg' alt=''/>
@@ -28,6 +30,6 @@ function Contact(props) {
             </section>
         </section>
     )
-}
+});
 
 export default Contact;

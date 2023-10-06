@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 
 function Skill(props) {
 
@@ -31,7 +31,7 @@ function Skill(props) {
     )
 }
 
-function Skills (props) {
+const Skills = forwardRef((props, ref) => {
 
     const skills = props.skills;
 
@@ -54,7 +54,7 @@ function Skills (props) {
     }, []);
 
     return (
-        <section className={`skills ${isInView ? "in-view" : ""}`}>
+        <section className={`skills ${isInView ? "in-view" : ""}`} ref={ref}>
             <section className='skills-col'>
                 {skills
                     .filter((item, index) => index % 3 === 0)
@@ -78,6 +78,6 @@ function Skills (props) {
             </section>
         </section>
     )
-}
+});
 
 export default Skills;

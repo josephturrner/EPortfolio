@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect, forwardRef } from 'react';
 import Education from './Education';
 
-function About(props) {
+const About = forwardRef((props, ref) => {
 
     const homepage = props.homepage;
     const [isInView, setIsInView] = useState(false);
-
+      
     useEffect(() => {
+        
         const handleScroll = () => {
-            const element = document.querySelector('.about'); // Select the '.about' element
+            const element = document.querySelector('.about');
             if (element) {
                 const rect = element.getBoundingClientRect();
-                setIsInView(rect.top + rect.height/4 < window.innerHeight);
+                setIsInView(rect.top + 200 < window.innerHeight);
             }
         };
 
-        window.addEventListener("scroll", handleScroll);
-        
+        window.addEventListener('scroll', handleScroll);
+      
         return () => {
-            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
     return (
-        <section className={`about ${isInView ? "in-view" : ""}`}>
+        <section className={`about ${isInView ? "in-view" : ""}`} ref={ref}>
             <section className={`about-box summary ${isInView ? "in-view" : ""}`}>
                 <section className='top-bottom'>
                     <h2 className='about-name'>{homepage.profile.name}</h2>
@@ -48,6 +48,6 @@ function About(props) {
             </section>
         </section>
     )
-}
+});
 
 export default About;
