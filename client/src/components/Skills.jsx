@@ -1,5 +1,7 @@
 import React, { useState, useEffect, forwardRef } from 'react';
 
+import '../styles/skills.css'
+
 function Skill(props) {
 
     const skillLevel = [
@@ -13,12 +15,12 @@ function Skill(props) {
 
     const [showDescription, setShowDescription] = useState(false);
 
-    const handleDescription = (bool) => {
-        setShowDescription(bool)
+    const handleDescription = () => {
+        setShowDescription(!showDescription)
     }
 
     return (
-        <section className='skill-box' onMouseEnter={() => handleDescription(true)} onMouseLeave={() => handleDescription(false)}>
+        <section className='skill-box' onClick={handleDescription}>
             <img className='skill-icon' src={skill.icon} alt=''/>
             <h3 className='skill-name'>{skill.name}</h3>
             <section className='skill-progress'>
@@ -36,6 +38,8 @@ const Skills = forwardRef((props, ref) => {
     const skills = props.skills;
 
     const [isInView, setIsInView] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -53,31 +57,79 @@ const Skills = forwardRef((props, ref) => {
         };
     }, []);
 
-    return (
-        <section className={`skills ${isInView ? "in-view" : ""}`} ref={ref}>
-            <section className='skills-col'>
-                {skills
-                    .filter((item, index) => index % 3 === 0)
-                    .map((item, index) => (
-                        <Skill skill={item} key={index} />
-                    ))}
+    useEffect(() => {
+        function handleResize() {
+          setWindowWidth(window.innerWidth);
+          setWindowHeight(window.innerHeight);
+        }
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    if (windowWidth >= 1400) {
+        return (
+            <section className={`skills ${isInView ? "in-view" : ""}`} ref={ref}>
+                <section className='skills-col'>
+                    {skills
+                        .filter((item, index) => index % 3 === 0)
+                        .map((item, index) => (
+                            <Skill skill={item} key={index} />
+                        ))}
+                </section>
+                <section className='skills-col'>
+                    {skills
+                        .filter((item, index) => index % 3 === 1)
+                        .map((item, index) => (
+                            <Skill skill={item} key={index} />
+                        ))}
+                </section>
+                <section className='skills-col'>
+                    {skills
+                        .filter((item, index) => index % 3 === 2)
+                        .map((item, index) => (
+                            <Skill skill={item} key={index} />
+                        ))}
+                </section>
             </section>
-            <section className='skills-col'>
-                {skills
-                    .filter((item, index) => index % 3 === 1)
-                    .map((item, index) => (
-                        <Skill skill={item} key={index} />
-                    ))}
+        );
+    }
+    else if (windowWidth >= 950) {
+        return (
+            <section className={`skills ${isInView ? "in-view" : ""}`} ref={ref}>
+                <section className='skills-col'>
+                    {skills
+                        .filter((item, index) => index % 2 === 0)
+                        .map((item, index) => (
+                            <Skill skill={item} key={index} />
+                        ))}
+                </section>
+                <section className='skills-col'>
+                    {skills
+                        .filter((item, index) => index % 2 === 1)
+                        .map((item, index) => (
+                            <Skill skill={item} key={index} />
+                        ))}
+                </section>
             </section>
-            <section className='skills-col'>
-                {skills
-                    .filter((item, index) => index % 3 === 2)
-                    .map((item, index) => (
-                        <Skill skill={item} key={index} />
-                    ))}
+        )
+    }
+    else {
+        return (
+            <section className={`skills ${isInView ? "in-view" : ""}`} ref={ref}>
+                <section className='skills-col'>
+                    {skills
+                        .filter((item, index) => index % 2 === 0)
+                        .map((item, index) => (
+                            <Skill skill={item} key={index} />
+                        ))}
+                </section>
             </section>
-        </section>
-    )
+        )
+    }
 });
 
 export default Skills;

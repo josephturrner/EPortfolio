@@ -1,13 +1,13 @@
 import React, {useState, useEffect, useRef } from 'react';
 
-import { debounce } from 'lodash';
-
 import Header from '../components/Header';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
+
+import '../styles/homepage.css';
 
 import homepage from '../homepage.json';
 
@@ -96,13 +96,13 @@ function HomePage() {
                 </div>
                 <About homepage={homepage} ref={aboutRef}/>
                 <Skills skills={homepage.skills} ref={skillsRef}/>
-                <section className={`experience ${isInView ? 'in-view': ''}`} ref={experienceRef}>
+                {/* <section className={`experience ${isInView ? 'in-view': ''}`} ref={experienceRef}>
                     {homepage.experience.map((item, index) => (
                         <Work experience={item} key={index}/>
                     ))}
                     <Projects projects={homepage.projects}/>
-                </section>
-                <Contact contact={homepage.contact} ref={contactRef}/>
+                </section> */}
+                {/* <Contact contact={homepage.contact} ref={contactRef}/> */}
             </section>
         </div>
     )

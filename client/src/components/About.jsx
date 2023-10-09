@@ -1,5 +1,29 @@
 import React, { useState, useEffect, forwardRef } from 'react';
-import Education from './Education';
+
+import '../styles/about.css';
+
+function Education(props) {
+    
+    const education = props.education;
+
+    return (
+        <section className='education'>
+            <img className='education-photo' alt='' src={education.logo}/>
+            <section className='education-info'>
+                <section>
+                    <p className='education-title'>{education.title}</p>
+                    <p className='education-title subtitle'>{education.subtitle}</p>
+                    <p className='education-title subtitle'>{education.ps}</p>
+                </section>
+                <ol className='education-skills'>
+                    {education.skills.map((item, index) => (
+                        <li key={index}>{item}</li>
+                    ))}
+                </ol>
+            </section>
+        </section>
+    )
+}
 
 const About = forwardRef((props, ref) => {
 
@@ -25,16 +49,9 @@ const About = forwardRef((props, ref) => {
 
     return (
         <section className={`about ${isInView ? "in-view" : ""}`} ref={ref}>
-            <section className={`about-box summary ${isInView ? "in-view" : ""}`}>
-                <section className='top-bottom'>
-                    <h2 className='about-name'>{homepage.profile.name}</h2>
-                    <p className='about-description'>{homepage.profile.description}</p>
-                </section>
-                <Education education={homepage.education}/>
-            </section>
             <section className={`about-box profile ${isInView ? "in-view" : ""}`}>
                 <img className='about-photo' alt='' src='/images/skateboard-mountains.jpg'/>
-                <section className='row'>
+                <section className='about-contacts'>
                     <a href={`mailto: ${homepage.contact.gmail}`} className='link-item'>
                         <img src='/icons/gmail-logo.svg' alt='' className='contact-logo'/>
                     </a>
@@ -45,6 +62,13 @@ const About = forwardRef((props, ref) => {
                         <img src='/icons/git-logo.svg' alt='' className='contact-logo'/>
                     </a>
                 </section>
+            </section>
+            <section className={`about-box summary ${isInView ? "in-view" : ""}`}>
+                <section className='top-bottom'>
+                    <h2 className='about-name'>{homepage.profile.name}</h2>
+                    <p className='about-description'>{homepage.profile.description}</p>
+                </section>
+                <Education education={homepage.education}/>
             </section>
         </section>
     )

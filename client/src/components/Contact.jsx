@@ -1,5 +1,7 @@
 import { forwardRef } from "react";
 
+import '../styles/contact.css';
+
 const Contact = forwardRef((props, ref) => {
 
     const contact = props.contact;

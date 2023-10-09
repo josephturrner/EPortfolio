@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../styles/work.css';
+
 function Work(props) {
 
     const experience = props.experience;

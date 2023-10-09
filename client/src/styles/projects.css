@@ -1,0 +1,84 @@
+/* Project */
+
+.project-section {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+  
+.project-col {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+.project-col.right {
+    margin: 0 auto 0 10px;
+}
+  
+.project-col.left {
+    margin: 0 10px 0 auto;
+}
+  
+.project-box {
+    width: fit-content;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px;
+    border-radius: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 1.125em;
+    padding: 10px;
+    transition: font-size 0.3s ease 0s;
+    z-index: 1;
+    &::before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+      border-radius: 20px;
+    }
+}
+  
+.project-box:hover {
+    font-size: 1.25em;
+    text-shadow: 0 0 10px var(--light_secondary_theme);
+    box-shadow: 0 0 10px var(--light_secondary_theme);
+}
+  
+.project-title {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 2% auto;
+    z-index: 3;
+}
+  
+.project-title.subtitle {
+    font-size: 1.25em;
+    font-style: oblique;
+    z-index: 3;
+}
+  
+.project-skills {
+    z-index: 3;
+}
+  
+.project-description {
+    margin: 0 auto;
+    z-index: 3;
+}

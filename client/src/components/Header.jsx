@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/header.css';
 
 function Header(props) {
 
     const text = props.section;
-    const [headerPadding, setheaderPadding] = useState('70px');
+    const [headerPadding, setheaderPadding] = useState('10vh');
     const [headerText, setHeaderText] = useState(text);
     const [visible, setVisible] = useState(false);
 
@@ -15,14 +16,14 @@ function Header(props) {
             setVisible(true);
         }, 250);
 
-    }, [props.section]);
+    }, [text]);
 
     useEffect(() => {
         const handleScroll = () => {
 
             const scrollY = window.scrollY;
-            const newheaderPadding = 70 - scrollY;
-            const updatedheaderPadding = `${Math.max(0, newheaderPadding)}px`;
+            const newheaderPadding = 10 - scrollY;
+            const updatedheaderPadding = `${Math.max(0, newheaderPadding)}vh`;
             setheaderPadding(updatedheaderPadding);
         };
   

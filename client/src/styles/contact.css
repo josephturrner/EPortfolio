@@ -1,0 +1,57 @@
+/* Contact */
+
+.contact {
+    display: flex;
+    height: 85vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light_secondary_theme);
+}
+  
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    padding: 0 5vw;
+    margin: auto auto 0;
+    font-size: 2em;
+}
+  
+.contact-pic {
+    border-radius: 100%;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+  
+.contact-logo.bottom {
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+}
+  
+.telephone {
+    transform: rotate(125deg);
+    transition: transform 0.75s ease;
+}
+  
+.telephone:hover {
+    transform: rotate(0deg);
+}
+  
+.globe:hover {
+    animation: rotateContinuous 10s linear infinite;
+}
+  
+  @keyframes rotateContinuous {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

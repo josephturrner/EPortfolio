@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../styles/projects.css';
+
 function Project(props) {
 
     const project = props.project;
