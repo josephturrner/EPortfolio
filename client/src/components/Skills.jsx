@@ -64,7 +64,6 @@ const Skills = forwardRef((props, ref) => {
     useEffect(() => {
         function handleResize() {
           setWindowWidth(window.innerWidth);
-          setWindowHeight(window.innerHeight);
         }
     
         window.addEventListener('resize', handleResize);
