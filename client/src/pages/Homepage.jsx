@@ -96,13 +96,13 @@ function HomePage() {
                 </div>
                 <About homepage={homepage} ref={aboutRef}/>
                 <Skills skills={homepage.skills} ref={skillsRef}/>
-                {/* <section className={`experience ${isInView ? 'in-view': ''}`} ref={experienceRef}>
+                <section className={`experience ${isInView ? 'in-view': ''}`} ref={experienceRef}>
                     {homepage.experience.map((item, index) => (
                         <Work experience={item} key={index}/>
                     ))}
                     <Projects projects={homepage.projects}/>
-                </section> */}
-                {/* <Contact contact={homepage.contact} ref={contactRef}/> */}
+                </section>
+                <Contact contact={homepage.contact} ref={contactRef}/>
             </section>
         </div>
     )

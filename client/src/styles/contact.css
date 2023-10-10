@@ -1,8 +1,10 @@
 /* Contact */
 
 .contact {
+    width: 100vw;
     display: flex;
-    height: 85vh;
+    height: fit-content;
+    min-height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,15 +17,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 250px;
-    padding: 0 5vw;
+    width: 30%;
+    padding: 0;
     margin: auto auto 0;
     font-size: 2em;
+    transition: font-size 0.3s ease-in-out 0s;
 }
   
 .contact-pic {
     border-radius: 100%;
-    width: 300px;
+    width: 30%;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +34,7 @@
 .contact-logo.bottom {
     width: 60px;
     height: 60px;
-    margin: 0 30px;
+    margin: 0 10px;
 }
   
 .telephone {
@@ -53,5 +56,34 @@
     }
     to {
       transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-item {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 675px) {
+    .contact-item {
+        font-size: 1.25em;
+    }
+    .contact-logo.bottom {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-item {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-logo.bottom {
+        width: 40px;
+        height: 40px;
     }
 }

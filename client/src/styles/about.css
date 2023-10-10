@@ -140,9 +140,13 @@
     }
     .about-box {
         width: 90vw;
-        margin: 0 auto;
+        margin: 25px auto;
         min-height: 350px;
         justify-content: center;
+        text-align: center;
+    }
+    .about-name {
+        text-align: center;
     }
     .about-box.profile, .about-box.summary {
         left: 0;

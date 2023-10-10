@@ -26,25 +26,33 @@ function Projects(props) {
 
     const projects = props.projects;
 
+    // return (
+    //     <>
+    //     <section className='project-col left'>
+    //         {projects
+    //             .filter((item, index) => index % 2 === 0)
+    //             .map((item, index) => (
+    //                 <Project key={index} project={item}/>
+    //             ))
+    //         }
+    //     </section>
+    //     <section className='project-col right'>
+    //         {projects
+    //             .filter((item, index) => index % 2 === 1)
+    //             .map((item, index) => (
+    //                 <Project key={index} project={item}/>
+    //             ))
+    //         }
+    //     </section>
+    //     </>
+    // )
+
     return (
-        <>
-        <section className='project-col left'>
-            {projects
-                .filter((item, index) => index % 2 === 0)
-                .map((item, index) => (
-                    <Project key={index} project={item}/>
-                ))
-            }
+        <section className='project-section'>
+            {projects.map((item, index) => (
+                <Project key={index} project={item}/>
+            ))}
         </section>
-        <section className='project-col right'>
-            {projects
-                .filter((item, index) => index % 2 === 1)
-                .map((item, index) => (
-                    <Project key={index} project={item}/>
-                ))
-            }
-        </section>
-        </>
     )
 
 }

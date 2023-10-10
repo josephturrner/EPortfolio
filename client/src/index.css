@@ -18,9 +18,14 @@ code {
     monospace;
 }
 
+.root {
+  background-color: var(--secondary_theme);
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--secondary_theme);
 }
 
 a {
@@ -45,10 +50,6 @@ a {
   padding: 0;
   margin: 0 auto;
   width: 90%;
-}
-
-.page:last-child {
-  border: 0;
 }
 
 .home {

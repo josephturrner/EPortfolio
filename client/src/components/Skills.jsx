@@ -14,14 +14,19 @@ function Skill(props) {
     const skill = props.skill;
 
     const [showDescription, setShowDescription] = useState(false);
+    const [hover, setHover] = useState(false);
 
     const handleDescription = () => {
         setShowDescription(!showDescription)
     }
 
+    const handleHover = (bool) => {
+        setHover(bool);
+    }
+
     return (
-        <section className='skill-box' onClick={handleDescription}>
-            <img className='skill-icon' src={skill.icon} alt=''/>
+        <section className='skill-box' onClick={handleDescription} onMouseEnter={() => handleHover(true)} onMouseLeave={() => handleHover(false)}>
+            <img className={`skill-icon ${hover ? 'hover' : ''}`} src={skill.icon} alt=''/>
             <h3 className='skill-name'>{skill.name}</h3>
             <section className='skill-progress'>
                 <progress className='skill-progressbar' value={skill.level} max="100"/>
@@ -39,11 +44,10 @@ const Skills = forwardRef((props, ref) => {
 
     const [isInView, setIsInView] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
     useEffect(() => {
         const handleScroll = () => {
-            const element = document.querySelector('.skills'); // Select the '.about' element
+            const element = document.querySelector('.skills');
             if (element) {
                 const rect = element.getBoundingClientRect();
                 setIsInView(rect.top + rect.height/10 < window.innerHeight);
@@ -97,7 +101,7 @@ const Skills = forwardRef((props, ref) => {
             </section>
         );
     }
-    else if (windowWidth >= 950) {
+    else if (windowWidth >= 750) {
         return (
             <section className={`skills ${isInView ? "in-view" : ""}`} ref={ref}>
                 <section className='skills-col'>
