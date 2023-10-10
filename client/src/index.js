@@ -8,7 +8,7 @@ import {
   Outlet
 } from 'react-router-dom';
 import './index.css';
-import HomePage from './pages/HomePage';
+import Homepage from './pages/Homepage';
 import ProjectPage from './pages/ProjectPage';
 import ExperiencePage from './pages/ExperiencePage';
 import EducationPage from './pages/EducationPage'
@@ -21,7 +21,7 @@ import Footer from './components/Footer';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Outlet />}>
-      <Route index element={<HomePage />} />
+      <Route index element={<Homepage />} />
       <Route path="experience" element={<ExperiencePage/>}/>
       <Route path="projects" element={<ProjectPage/>}/>      
       <Route path="education" element={<EducationPage/>}/>      
