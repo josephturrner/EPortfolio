@@ -121,7 +121,7 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
-  margin: 0 auto 5vh;
+  margin: 0 auto;
 }
 
 .top-bottom {

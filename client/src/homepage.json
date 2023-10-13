@@ -68,60 +68,11 @@
             "icon": "/icons/kubernetes-icon.svg"
         }
     ],
-    "profile": {
+    "intro": {
         "name": "I'm Joseph Turner",
-        "title": "Software Engineer",
-        "photo": "/icons/me.svg",
-        "description": "Recent computer science graduate with a passion for full-stack development and data-science. Seeking an entry-level position in web development, devops, or data-science with opportunity to grow into a broader software engineering role. 2 years of experience working with full-stack technologies with a focus on frontend development using React-based frameworks and SQL-based databases. 1 year of experience working with data-science technologies such as R, Python, with a focus in Machine Learning. 1 year of experience working as a DevOps Engineer managing and validating the deployment of kubernetes clusters across multiple cloud providers, developing end-to-end and user-acceptance tests for kubernetes applications.",
-        "skills": ["Frontend Development", "Backend Development", "DevOps", "Containerization", "Machine Learning", "UX Design", "Technical Documentation", "Independence", "Attention to Detail", "Collaboration"],
-        "technology": ["Java", "JavaScript", "NodeJS", "GoLang", "Python", "Bash", "React", "HTML/CSS", "SQL", "Linux", "Windows", "R", "Kubernetes", "Docker"]
+        "photo": "/images/family.jpg",
+        "description": "Recent computer science graduate with a passion for full-stack development and data-science. Seeking an entry-level position in web development, devops, or data-science with opportunity to grow into a broader software engineering role. 2 years of experience working with full-stack technologies with a focus on frontend development using React-based frameworks and SQL-based databases. 1 year of experience working with data-science technologies such as R, Python, with a focus in Machine Learning. 1 year of experience working as a DevOps Engineer managing and validating the deployment of kubernetes clusters across multiple cloud providers, developing end-to-end and user-acceptance tests for kubernetes applications."
     },
-    "careerpaths": [
-        {
-            "title": "Backend",
-            "skills": ["SQL", "NoSQL", "Machine Learning", "Python", "R", "Applied Mathematics"],
-            "description": "I have a passion for numbers, and I always have. During my time at Wentworth, I completed a mathematics minor so that I could continue my career in data. I completed databases, machine learning, multivariable calculus, and probability and statistics at Wentworth, which has provided me with the conceptual and programming tools necessary to structure, analyze, and handle data.",
-            "projects": [
-                {
-                    "name": "Ball IQ",
-                    "related": "Fetched data from official NBA api endpoint & implemented machine learning techniques such as principle-component-analysis, linear-regression and k-nearest-neighbor to project player statistics for the following season."
-                }
-            ],
-            "courses": ["Databases", "Machine Learning", "Multivariable Calculus", "Probability & Statistics", "Discrete Math", "Software Engineering"]
-        },
-        {
-            "title": "Frontend",
-            "skills": ["JavaScript", "React", "NodeJS", "HTML/CSS", "UX-Design"],
-            "description": "I have always had a desire for a creative outlet through computer science, and full-stack development allows me to apply my love for design to something that will be used by real people. Full-stack development combines my love for design with my love for math, data, and information science in a way that ends in a finished product that can be seen and interacted with.",
-            "projects": [
-                {
-                    "name": "Ball IQ",
-                    "related": "Fetched data from official NBA api endpoint & implemented machine learning techniques to project player statistics for the following season. Designed backend server and database to use stored information to fetch live statistics about a selected player. Frontend created using React framework and ChakraUI React library."
-                },
-                {
-                    "name": "Recommendify",
-                    "related": "Integrated Spotify's open-source authentification and user statistics APIs to allow user to sign in using their Spotify credentials. Listener data is fetched from the API and a user's top items are displayed along with a recommendation based upon their top artists and tracks using Spotify's recommendation API. Designed in plain HTML and CSS, packaged with NodeJS and hosted using ExpressJS."
-                },
-                {
-                    "name": "RateYourDining",
-                    "related": "Designed and implemented frontend portion of a dining review forum for my university. Created using React and React library ChakraUI in a 'backend-less' environment using Google's firestore and firebase services."
-                }
-            ],
-            "courses": ["Web Development", "Software Engineering"]
-        },
-        {
-            "title": "DevOps",
-            "skills": ["Linux", "Windows", "Kubernetes", "Docker", "JavaScript", "Java", "Python", "GoLang", "Automation", "E2E Testing", "Acceptance Testing", "Github Actions", "Jenkins", "GCP/GKE", "AWS/EKS"],
-            "description": "I thrive in positions that require attention to detail and problem-solving. I have interests in maintaining the organization and cleanliness of a software environment. I enjoy spending time identifying weak points and places to improve in the context of a large-scale project.",
-            "projects": [
-                {
-                    "name": "Avesha",
-                    "related": "At Avesha, I was in charge of deploying kubernetes applications and developing automated tests to ensure the applications were distributed correctly within the containerized environment. I used GoLang to develop tests to verify communication across cloud clusters existing on different cloud providers. I was also in charge of testing the end-to-end functionality of Avesha's KubesliceUI application using a containerized testing environment utilizing Ginkgo for validating the information displayed on the site and CypressJS to validate the functionality of the frontend UI."
-                }
-            ],
-            "courses": ["Software Engineering", "Algorithms", "Data Structures", "Discrete Math", "Databases"]
-        }
-    ],
     "education": {
         "title": "Wentworth Institute of Technology",
         "subtitle": "Bachelor's of Science in Computer Science",
@@ -171,13 +122,13 @@
                 "size": "100%",
                 "position": "top-right"
             },  
-            "git": "https://github.com/sephturner/BallIQ"
+            "link": "https://github.com/sephturner/BallIQ"
         },
         {
             "title": "Rate Your Dining",
             "subtitle": "Campus Dining Review Forum",
             "logo": "/icons/bowl-icon.svg",
-            "git": "https://github.com/wmarchesi123/rate-your-dining-webapp",
+            "link": "https://github.com/wmarchesi123/rate-your-dining-webapp",
             "background": {
                 "image": "/icons/RYD.png",
                 "size": "100%",
@@ -203,7 +154,7 @@
             "title": "Recommendify",
             "subtitle": "Spotify Stats & Recommendations",
             "logo": "/icons/spotify-logo.svg",
-            "git": "https://github.com/sephturner/Recommendify",
+            "link": "https://github.com/sephturner/Recommendify",
             "background": {
                 "image": "/icons/recommendify.png",
                 "size": "100%",
@@ -219,6 +170,6 @@
         "linkedin": "https://www.linkedin.com/in/joseph-turner-/",
         "phone": "+1 774-269-4467",
         "location": "Gorham, NH",
-        "photo": "/icons/me.svg"
+        "photo": "/images/family-contact.jpg"
     }
 }

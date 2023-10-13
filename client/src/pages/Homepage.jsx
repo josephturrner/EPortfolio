@@ -90,7 +90,7 @@ function HomePage() {
             <Header header={homepage.header} section={headers[headerText]}/>
             <section className='content'>
                 <div className={`intro ${showIntro ? 'visible' : ''}`} ref={introRef}>
-                    <img className='intro-pic' src={homepage.profile.photo} alt='' />
+                    <img className='intro-pic' src={homepage.intro.photo} alt='' />
                     <p className={`intro-more ${showMore ? 'visible': ''}`}>Scroll to Learn More</p>
                     <h2 className='intro-title'>{homepage.header.title}</h2>
                 </div>

@@ -4,7 +4,8 @@
     width: 100vw;
     display: flex;
     height: fit-content;
-    min-height: 50vh;
+    min-height: 75vh;
+    padding: 5vh 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -19,7 +20,7 @@
     text-align: center;
     width: 30%;
     padding: 0;
-    margin: auto auto 0;
+    margin: auto auto;
     font-size: 2em;
     transition: font-size 0.3s ease-in-out 0s;
 }

@@ -65,8 +65,8 @@ const About = forwardRef((props, ref) => {
             </section>
             <section className={`about-box summary ${isInView ? "in-view" : ""}`}>
                 <section className='top-bottom'>
-                    <h2 className='about-name'>{homepage.profile.name}</h2>
-                    <p className='about-description'>{homepage.profile.description}</p>
+                    <h2 className='about-name'>{homepage.intro.name}</h2>
+                    <p className='about-description'>{homepage.intro.description}</p>
                 </section>
                 <Education education={homepage.education}/>
             </section>

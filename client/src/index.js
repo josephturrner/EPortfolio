@@ -8,7 +8,7 @@ import {
   Outlet
 } from 'react-router-dom';
 import './index.css';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/Homepage';
 
 // router and routes
 const router = createBrowserRouter(

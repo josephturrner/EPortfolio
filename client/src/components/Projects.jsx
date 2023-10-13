@@ -7,7 +7,7 @@ function Project(props) {
     const project = props.project;
 
     return (
-        <section className='project-box' style={{backgroundImage: `url(${project.background.image})`, backgroundPosition: project.background.position}}>
+        <a className='project-box' href={project.link} target='_blank' rel="noreferrer" style={{backgroundImage: `url(${project.background.image})`, backgroundPosition: project.background.position}}>
             <h2 className='project-title'>{project.title}</h2>
             {project.subtitle && (
                 <p className='project-title subtitle'>{project.subtitle}</p>
@@ -18,7 +18,7 @@ function Project(props) {
                 ))}
             </section>
             <p className='project-description'>{project.description}</p>
-        </section>
+        </a>
     )
 }
 
