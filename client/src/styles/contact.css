@@ -1,0 +1,90 @@
+/* Contact */
+
+.contact {
+    width: 100vw;
+    display: flex;
+    height: fit-content;
+    min-height: 75vh;
+    padding: 5vh 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light_secondary_theme);
+}
+  
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding: 0;
+    margin: auto auto;
+    font-size: 2em;
+    transition: font-size 0.3s ease-in-out 0s;
+}
+  
+.contact-pic {
+    border-radius: 100%;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+  
+.contact-logo.bottom {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+  
+.telephone {
+    transform: rotate(125deg);
+    transition: transform 0.75s ease;
+}
+  
+.telephone:hover {
+    transform: rotate(0deg);
+}
+  
+.globe:hover {
+    animation: rotateContinuous 10s linear infinite;
+}
+  
+  @keyframes rotateContinuous {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 900px) {
+    .contact-item {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 675px) {
+    .contact-item {
+        font-size: 1.25em;
+    }
+    .contact-logo.bottom {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-item {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-logo.bottom {
+        width: 40px;
+        height: 40px;
+    }
+}

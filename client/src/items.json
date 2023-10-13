@@ -1,0 +1,110 @@
+{
+    "projects": [
+        {
+            "title": "Avesha E2E Testing",
+            "subtitle": "DevOps Engineer",
+            "skills": ["JavaScript", "GoLang", "CypressJS", "Ginkgo", "HTML", "Docker", "Linux", "Jenkins", "Github Actions"],     
+            "concepts": ["E2E Testing", "Frontend Testing", "Containerization", "Kubernetes", "Github Standards", "Technical Documentation", "Technical Communication", "Time Management"],
+            "description": "Working as a part of the testing automation team, I developed E2E test suites for Avesha's Kubeslice UI product. I designed and documented the tests to be developed before beginning. I wrote tests using a container-in-container environment, utilizing the Ginkgo GoLang testing framework to validate the deployment of the application onto a Kubernetes cluster. The Ginkgo tests spawned Docker containers to run the Cypress JS tests, which tested the frontend UI and the accuracy of the information in the UI as compared to our backend data. The containerized environment made the testing more efficient as all memory was deallocated once the tests finished running. I developed test summaries for each testing clause, and presented my work to my peers at the company. This project taught me a lot about the importance of documentation and communication within the flow of a company with a lot of moving pieces.",
+            "link": "https://avesha.io",
+            "logo": "/icons/avesha-logo.svg"
+        },
+        {
+            "title": "Avesha Kubeslice Deployment Testing",
+            "subtitle": "DevOps Engineer",  
+            "skills": ["Linux", "Bash", "GoLang", "Ginkgo", "AWS/EKS", "GCP/GKE"],      
+            "concepts": ["Deployment Testing", "Backend Testing", "Containerization", "Kubernetes", "Github Standards", "Technical Documentation", "Technical Communication", "Time Management"],
+            "description": "As a part of the testing team, I developed tests to validate the deployment of Avesha's kubeslice product connecting an AWS K8s cluster with a GCP K8s cluster. I utilized Bash and the AWS and gcloud clis to fetch deployment information and pod distribution to validate the deployment of Avesha's Kubeslice software. I developed suites using GoLang's Ginkgo framework to test the connectivity between the clusters, ensuring that the tests could be easily scaled for a 3-or-more cluster deployment. This project taught me the importance of setting clear goals and documenting them before beginning work on a project to get an accurate estimate of the timeline and scale of a project.",
+            "link": "https://avesha.io",
+            "logo": "/icons/avesha-logo.svg" 
+        },
+        {
+            "title": "Ball-IQ",
+            "subtitle": "Basketball Stats and Projections",
+            "skills": ["MySQL", "ExpressJS", "ReactJS", "NodeJS", "HTML", "CSS", "Python"],      
+            "concepts": ["APIs", "Database Design", "Machine Learning", "Data Handling", "UX Design", "HTML/React Libraries"],
+            "description": "Ball-IQ is a full stack project I created using a MySQL database, Expressjs backend hosting, Reactjs UI components, and nodejs packaging. A user can search for any currently active NBA player, and Ball-IQ will display their career statistics for regular season and playoffs. To save space on my local hard-drive, I decided to store only the information necessary to make an API request to the official nba api using the python nba_api package. I implemented 2 machine learning algorithms in the backend using the python sklearn package to predict a player's point per game totals in the following season. I used a K-Nearest-Neighbor weighted average regression on scoring stats and a separate implementation using principle component analysis to reduce the dimensionality of the data to a single dimension, then running a linear regression between the principle component and a player's point per game total. This project is still a work in progress, and it has taught me the importance of prioritizing tasks, planning ahead of time, and how to do my own research to learn about and implement new technologies.",
+            "logo": "/icons/basketball-icon.svg",
+            "git": "https://github.com/sephturner/BallIQ"
+        },
+        {
+            "title": "Rate Your Dining",
+            "subtitle": "College Campus Dining Review Forum",
+            "skills": ["Firebase", "Firestore", "React", "HTML", "CSS"],
+            "concepts": ["Backendless Database Development", "UX Design", "HTML/React Libraries"],
+            "description": "Working as a part of a team for my Software Engineering course, I worked with a team member to design and implement the frontend UX for a review forum for college campus dining. Each menu item has a corresponding forum to give a like rating for the item and a text-post review of the menu item. This project taught me about the UX drafting process and how important it is to design the UX before beginning work on a project. We implemented the frontend using React's ChakraUI library. I also learned a lot about how to work as a part of a team in the context of design, which is more subjective than a lot of the experience I previously had.",
+            "logo": "/icons/bowl-icon.svg",
+            "git": "https://github.com/wmarchesi123/rate-your-dining-webapp"
+        },
+        {
+            "title": "Recommendify",
+            "subtitle": "Spotify Stats & Recommendations",
+            "skills": ["JavaScript", "ExpressJS", "NodeJS", "HTML", "CSS"],
+            "concepts": ["APIs", "UX Design", "Using Open Source Code", "Data Handling"],
+            "description": "I developed a simple backendless web application using expressjs routing. The frontend was written in raw html and css, with api calls being made using HTTP requests written in javascript. The frontend is connected to Spotify's login using their open source sign-in validation, which was then used to fetch listener information and recommeend songs based upon their top songs and artists using Spotify's recommendation api endpoint. This was the first web application I worked on, and I learned how web routing works as well as how to format and handle API calls and HTTP requests. Writing the application in raw html and css taught me the purpose of using frameworks and libraries for frontend development such as React and bootstrap, which I have used in my later projects.",
+            "logo": "/icons/spotify-logo.svg",
+            "git": "https://github.com/sephturner/Recommendify"
+        },
+        {
+            "title": "2-Player Snake",
+            "skills": ["Java", "Processing 3.0"],      
+            "concepts": ["Code Organization", "Object-Oriented Programming", "GUI Design", "Data Structures"],
+            "description": "Local multiplayer snake game developed using Java without the use of others' code. I decided to do this to better understand object-oriented programming, GUI design, and data structures. I created a GUI from scratch, which allowed me to better understand what is going on behind the hood of a graphical interface. I had to think creatively about how to make something that I previously took for granted. This project gave me perspective on how to define and achieve goals, the importance of documentation, and the value of working on personal projects to improve or learn new skillsets.",
+            "logo": "/icons/snake-icon.svg",
+            "git": "https://github.com/sephturner/2-Player-Snake",
+            "download": "MultiSnake.zip"
+        },
+        {
+            "title": "Socket Chess",   
+            "skills": ["Python", "TCP/UDP"],      
+            "concepts": ["Socket Programming", "Network Programming", "Verbal Communication", "Task Prioritization", "Project Planning"],
+            "description": "A partner and I created a peer-to-peer command-line chess game for our Network Programming course. The goal was to create a chess application in Python that would allow 2 players to play chess using a TCP protocol and a full-fledged GUI to go along with it. As we worked on the project, we realized that our aspirations were greater than the scope of the project, and shifted our focus to a terminal-based chess application. We used a UDP connection with python socket programming to send a move to the opposing player, who then had as long as they pleased to respond with a move of their own. We implemented a system that checked whether a given move was valid, and checked the state of the game for a winner after every move. Although the final product was rudimentary, this project taught me a lot about the software development process. I learned how to manage workload between 2 people, which allowed each of us to play to our own strengths to get the project done more efficiently. I also learned how important it is to manage time and stay focused on a goal; sometimes it may feel like the right time create images of the chess-pieces, but that time is better spent working on the functionality of the game.",
+            "logo": "/icons/queen-chess-icon.svg"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Avesha Systems",
+            "subtitle": "DevOps Engineer",
+            "when": "January 2022 - March 2023",
+            "description": "I worked as a DevOps Engineer intern at Avesha Systems as a part of the deployment and frontend testing teams. As a member of the deployment testing team, I utilized AWS and GCP tools to deploy Avesha's Kubeslice product and validate the deployment. As a member of the frontend testing team, I designed, documented, and implemented test suites written in Avesha's containerized testing framework. Avesha opened my eyes to the importance of keeping up with emerging technologies and the importance of open and clear communication amongst team members. I learned how to use software engineering tools such as Bitbucket and Jira, and learned how to uphold industry standards working as a contributor of a company-managed repository including PR etiquette and version control. ",
+            "concepts": ["E2E Testing", "Deployment Testing", "Containerization", "Kubernetes", "Github Standards", "Technical Documentation", "Technical Communication", "Time Management"],
+            "skills": ["Linux", "Bash", "GoLang", "JavaScript", "NodeJS", "CypressJS", "GoLang", "Ginkgo", "Docker", "EKS", "GKE"],
+            "link": "https://avesha.io",
+            "logo": "/icons/avesha-logo.svg"
+        },
+        {
+            "title": "Staples Inc.",
+            "subtitle": "Sales Associate",
+            "when": "March 2019 - August 2020",
+            "description": "I worked as a general employee at Staples in Plymouth, MA. My role changed each shift, but I spent time as a cashier, tech associate, sales associate, and general employee. As a tech associate, I assisted customers in their technical difficulties ranging from removing viruses to finding the right charging cable. I learned how to communicate with people who did not come from a tech background and how to ask the right series of questions to identify a problem and a solution. I maintained a clean, organized work environment to hand off to the next shift.",
+            "concepts": ["IT Support", "Customer Service", "Sales", "Technical Communication"],
+            "skills": ["Windows", "Linux"],
+            "link": "https://stores.staples.com/ma/plymouth/131-samoset-street-(rt-44)",
+            "logo": "/icons/staples-logo.svg"
+        }
+    ],
+    "education": [
+        {
+            "title": "Wentworth Institute of Technology",
+            "subtitle": "Bachelor's of Science in Computer Science",
+            "ps": "Minors in Applied Mathematics & Computer Networking",
+            "when": "Class of 2023",
+            "description": "I completed my Bachelor's of Science in Computer Science at Wentworth Insitute of Technology in August of 2023. As I gained a better understanding of what computer science is, I found a love for web development, which was my focus for the latter half of my time at Wentworth, and inspired me to take on a double-minor. As a part of my Mathematics minor, I took a Machine Learning course that opened a new interest in data-driven mathematics and backend data handling, which I hope to apply in my career as a full-stack developer. In pursuit of the Computer Networking minor, I learned how internet protocols and routing standards work, which improved my understanding of full-stack development and computer security.",
+            "concepts": ["Algorithms", "Data Structures", "Databases", "Web Development", "Operating Systems", "Machine Learning", "Software Engineering"],
+            "skills": ["Java", "Python", "JavaScript", "HTML", "CSS", "Technical Communication", "Team-Based Learning", "Indepedence"],
+            "link": "https://wit.edu",
+            "logo": "/icons/wentworth-logo.svg"
+        },
+        {
+            "title": "Rising Tide Charter Public High School",
+            "subtitle": "High School Diploma",
+            "when": "Class of 2019",
+            "description": "I attended RTCPHS and received my high school diploma in 2019. Rising Tide is I found my love for problem-solving and computer science as I completed multiple computer science courses in python. During my Senior year, I worked with a group of 3 other students to develop a mobile application for the Congressional App Challenge. We won our district and traveled to DC to represent our district to congress. This is where I learned how to work as a part of a larger group, and I fell in love with the simultaneously creative and technical art of application development.",
+            "concepts": ["Computer Science", "Algorithms: Python Programming"],
+            "skills": ["Written Communication", "Object-Oriented Programming", "Time Management", "Team-Based Learning", "Independence"],
+            "link": "https://risingtide.org",
+            "logo": "/icons/risingtide-logo.png"
+        }
+    ]
+}

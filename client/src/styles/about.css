@@ -1,0 +1,203 @@
+/* About */
+
+.about {
+    height: fit-content;
+    min-height: 650px;
+    margin: 100px auto 25px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    opacity: 0;
+    transition: opacity 2s ease;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+  
+.about.in-view {
+    opacity: 1;
+}
+  
+.about-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 45vw;
+    height: fit-content;
+    min-height: 700px;
+    padding: 0;
+    margin: 0;
+
+}
+  
+.about-box.profile {
+    left: -10%;
+    margin-right: 2.5vw;
+    transition: left 10s cubic-bezier(0, 1, 0, 0.9);
+}
+  
+.about-box.summary {
+    right: -10%;
+    margin-left: 2.5vw;
+    transition: right 5s cubic-bezier(0, 1, 0, 0.9);
+}
+  
+.about-box.summary.in-view {
+    right: 0;
+}
+.about-box.profile.in-view {
+    left: 1%;
+}
+
+.about.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.about-name {
+    width: 100%;
+    text-align: left;
+    font-size: 2em;
+    margin: 0;
+}
+  
+.about-description {
+    font-size: 1.4em;
+}
+  
+.about-photo {
+    width: 110%;
+    background-color: var(--primary_theme);
+}
+
+
+
+
+/* Education */
+
+.education {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+    text-transform: uppercase;
+}
+  
+.education-photo {
+    width: 150px;
+    /* height: 10vw; */
+    background-color: var(--primary_theme);
+    border-radius: 20px;
+}
+  
+.education-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+}
+  
+.education-title {
+    font-size: 1.6em;
+    margin: 0 auto 1vh;
+}
+  
+.education-title.subtitle {
+    font-style: oblique;
+    font-size: 1.25em;
+    margin: 0 auto;
+}
+  
+.education-skills {
+    display: grid;
+    list-style: none;
+    width: 100%;
+    font-size: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (max-width: 1500px) {
+    .about {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1350px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-box {
+        width: 90vw;
+        margin: 25px auto;
+        min-height: 350px;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-name {
+        text-align: center;
+    }
+    .about-box.profile, .about-box.summary {
+        left: 0;
+        right: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .about-box.profile.in-view, .about-box.summary.in-view {
+        left: 0;
+        right: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .about-photo {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .education {
+        font-size: 1.5em;
+    }
+    .education-photo {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .education {
+        font-size: 1.25em;
+    }
+}
+
+@media (max-width: 850px) {
+    .education {
+        font-size: 1.125em;
+    }
+}
+
+@media (max-width: 750px) {
+    .education {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 660px) {
+    .education {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 590px) {
+    .education {
+        font-size: 0.7em;
+    }
+}

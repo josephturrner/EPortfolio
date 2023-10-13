@@ -1,20 +1,43 @@
-function Header() {
+import React, { useState, useEffect } from 'react';
+import '../styles/header.css';
+
+function Header(props) {
+
+    const text = props.section;
+    const [headerPadding, setheaderPadding] = useState('10vh');
+    const [headerText, setHeaderText] = useState(text);
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+
+        setVisible(false);
+        setTimeout(() => {
+            setHeaderText(text);
+            setVisible(true);
+        }, 250);
+
+    }, [text]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+
+            const scrollY = window.scrollY;
+            const newheaderPadding = 10 - scrollY;
+            const updatedheaderPadding = `${Math.max(0, newheaderPadding)}vh`;
+            setheaderPadding(updatedheaderPadding);
+        };
+  
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <header className='header'>
-            <div className='header-logo-title'>
-                <img src='/icons/portfolio-icon.svg' alt='' className='item-logo'/>
-                <div className='header-title'>
-                    <h2 className='header-name'>Joseph Turner</h2>
-                    <p className='header-job'>Software Engineer</p>
-                </div>
-            </div>
-            <ol className='header-links'>
-                <a href="/" className='header-link'>Home</a>
-                <a href="/projects" className='header-link'>Projects</a>
-                <a href="/experience" className='header-link'>Experience</a>
-                <a href="/education" className='header-link'>Education</a>
-            </ol>
-        </header>
+        <div className={`header`} style={{paddingTop: headerPadding}}>
+            <h2 className={`header-name ${visible ? '' : 'invisible'}`}>{headerText}</h2>
+        </div>
     )
 }
 

@@ -67,6 +67,21 @@
             "technology": ["Python", "TCP/UDP"],      
             "skills": ["Socket Programming", "Network Programming", "Verbal Communication", "Task Prioritization", "Project Planning"],
             "description": "A partner and I created a peer-to-peer command-line chess game for our Network Programming course. The goal was to create a chess application in Python that would allow 2 players to play chess using a TCP protocol and a full-fledged GUI to go along with it. As we worked on the project, we realized that our aspirations were greater than the scope of the project, and shifted our focus to a terminal-based chess application. We used a UDP connection with python socket programming to send a move to the opposing player, who then had as long as they pleased to respond with a move of their own. We implemented a system that checked whether a given move was valid, and checked the state of the game for a winner after every move. Although the final product was rudimentary, this project taught me a lot about the software development process. I learned how to manage workload between 2 people, which allowed each of us to play to our own strengths to get the project done more efficiently. I also learned how important it is to manage time and stay focused on a goal; sometimes it may feel like the right time create images of the chess-pieces, but that time is better spent working on the functionality of the game."
+        },
+        {
+            "title": "Avesha Kubeslice Deployment Testing",
+            "skills": ["Linux", "Bash", "GoLang", "Ginkgo", "AWS/EKS", "GCP/GKE", "Deployment Testing", "Containerization", "Kubernetes"],
+            "description": "Developed tests to validate the deployment of kubeslice software connecting an AWS K8s cluster with a GCP K8s cluster. Utilized Bash, GoLang's Ginkgo testing framework, and AWS and gcloud clis to validate deployment of application.",
+            "link": "https://avesha.io",
+            "logo": "/icons/avesha-logo.svg" 
+        },
+        {
+            "title": "Avesha Testing",
+            "subtitle": "E2E Testing Automation",
+            "skills": ["JavaScript", "GoLang/Ginkgo", "CypressJS", "Docker", "Kubernetes", "Linux"],
+            "description": "Developed E2E tests for Avesha's Kubeslice UI product in containerized environment, utilizing the Ginkgo GoLang and CypressJS testing frameworks and Kubernetes tools such as AWS/EKS and GCP/GKE.",
+            "link": "https://avesha.io",
+            "logo": "/icons/avesha-logo.svg"
         }
     ]
 }

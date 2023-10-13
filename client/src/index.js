@@ -8,23 +8,14 @@ import {
   Outlet
 } from 'react-router-dom';
 import './index.css';
-import Homepage from './pages/Homepage';
-import ProjectPage from './pages/ProjectPage';
-import ExperiencePage from './pages/ExperiencePage';
-import EducationPage from './pages/EducationPage'
-import Header from './components/Header';
-import Footer from './components/Footer';
+import HomePage from './pages/Homepage';
 
-// import reportWebVitals from './reportWebVitals';
 
 // router and routes
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Outlet />}>
-      <Route index element={<Homepage />} />
-      <Route path="experience" element={<ExperiencePage/>}/>
-      <Route path="projects" element={<ProjectPage/>}/>      
-      <Route path="education" element={<EducationPage/>}/>      
+      <Route index element={<HomePage />} />    
     </Route>
   )
 )
@@ -32,9 +23,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className='root-site'>
-        <Header/>
         <RouterProvider router={router}/>
-        <Footer/>
     </div>
   )
 }

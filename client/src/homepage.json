@@ -1,70 +1,175 @@
 {
-    "profile": {
-        "title": "Hi, I'm Joseph Turner",
-        "photo": "/icons/wentworth-logo.svg",
-        "description": "Recent computer science graduate with a passion for full-stack development and data-science. Seeking an entry-level position in web development, devops, or data-science with opportunity to grow into a broader software engineering role. 2 years of experience working with full-stack technologies with a focus on frontend development using React-based frameworks and SQL-based databases. 1 year of experience working with data-science technologies such as R, Python, with a focus in Machine Learning. 1 year of experience working as a DevOps Engineer managing and validating the deployment of kubernetes clusters across multiple cloud providers, developing end-to-end and user-acceptance tests for kubernetes applications.",
-        "skills": ["Frontend Development", "Backend Development", "DevOps", "Containerization", "Machine Learning", "UX Design", "Technical Documentation", "Independence", "Attention to Detail", "Collaboration"],
-        "technology": ["Java", "JavaScript", "NodeJS", "Go", "Python", "Bash", "React", "HTML", "CSS", "SQL", "Linux", "Windows", "R", "Kubernetes", "Docker"]
+    "header": {
+        "name": "Joseph Turner",
+        "title": "Software Engineer"
     },
-    "careerpaths": [
+    "skills": [
         {
-            "title": "Data Science",
-            "skills": ["Machine Learning", "Python", "R", "Statistics"],
-            "description": "I have a passion for numbers, and I always have. During my time at Wentworth, I decided to pursue a mathematics minor so that I could continue my career in data, analystics, and mathematics. I completed machine learning, multivariable calculus, and probability and statistics at Wentworth, which has provided me with the conceptual and programming tools necessary to analyze and handle data.",
-            "projects": [
-                {
-                    "name": "Ball IQ",
-                    "related": "Fetched data from official NBA api endpoint & implemented machine learning techniques such as principle-component-analysis, linear-regression and k-nearest-neighbor to project player statistics for the following season."
-                }
-            ],
-            "courses": ["Machine Learning", "Multivariable Calculus", "Probability & Statistics", "Discrete Math"]
+            "name": "React.js",
+            "level": 49,
+            "years": "1",
+            "description": "I have worked on multiple React-based projects for school and for personal use over the past year. I have worked with React libraries such as ChakraUI and focused on understanding the process of developing custom components to be used for a specific project. I have a single year of experience between projects and online courses.",
+            "icon": "/icons/react-icon.svg"
         },
         {
-            "title": "Full-Stack",
-            "skills": ["JavaScript", "React", "SQL", "NodeJS", "HTML", "CSS", "Python", "UX-Design"],
-            "description": "I have always had a desire for a creative outlet through computer science, and full-stack development allows me to apply my love for design to something that will be used by real people. Full-stack development combines my love for design with my love for math, data, and information science in a way that ends in a finished product that can be seen and interacted with.",
-            "projects": [
-                {
-                    "name": "Ball IQ",
-                    "related": "Fetched data from official NBA api endpoint & implemented machine learning techniques to project player statistics for the following season. Designed backend server and database to use stored information to fetch live statistics about a selected player. Frontend created using React framework and ChakraUI React library."
-                },
-                {
-                    "name": "Recommendify",
-                    "related": "Integrated Spotify's open-source authentification and user statistics APIs to allow user to sign in using their Spotify credentials. Listener data is fetched from the API and a user's top items are displayed along with a recommendation based upon their top artists and tracks using Spotify's recommendation API. Designed in plain HTML and CSS, packaged with NodeJS and hosted using ExpressJS."
-                },
-                {
-                    "name": "RateYourDining",
-                    "related": "Designed and implemented frontend portion of a dining review forum for my university. Created using React and React library ChakraUI in a 'backend-less' environment using Google's firestore and firebase services."
-                }
-            ],
-            "courses": ["Web Development", "Software Engineering", "Databases"]
+            "name": "HTML/CSS",
+            "level": 49,
+            "years": "2",
+            "description": "I have spent the past 2 years focused on sharpening my basic frontend development tools by taking online courses and creating personal projects with and without the use of libraries such as bootstrap. I have built a solid foundation for raw HTML and CSS for frontend development, and I am confident in my ability to make meaningful impact on projects using these languages.",
+            "icon": "/icons/html-icon.svg"
         },
         {
-            "title": "DevOps",
-            "skills": ["Linux", "Windows", "Kubernetes", "Docker", "JavaScript", "Java", "Python", "Automation", "E2E Testing", "Acceptance Testing", "Github Actions", "Jenkins", "GCP/GKE", "AWS/EKS"],
-            "description": "I thrive in positions that require attention to detail and problem-solving. I have interests in maintaining the organization and cleanliness of a software environment. I enjoy spending time identifying weak points and places to improve in the context of a large-scale project.",
-            "projects": [
-                {
-                    "name": "Avesha",
-                    "related": "At Avesha, I was in charge of deploying kubernetes applications and developing automated tests to ensure the applications were distributed correctly within the containerized environment. I used GoLang to develop tests to verify communication across cloud clusters existing on different cloud providers. I was also in charge of testing the end-to-end functionality of Avesha's KubesliceUI application using a containerized testing environment utilizing Ginkgo for validating the information displayed on the site and CypressJS to validate the functionality of the frontend UI."
-                }
-            ],
-            "courses": ["Software Engineering", "Algorithms", "Data Structures", "Discrete Math", "Databases"]
+            "name": "JavaScript/Node.js",
+            "level": 40,
+            "years": "2",
+            "description": "Between full-stack projects and my devops experience, I have a good understanding of JavaScript and Node.js's many modules such as Express, Axios, Cypress, SQL, and more.",
+            "icon": "/icons/nodejs-icon.svg"
+        },
+        {
+            "name": "Python",
+            "level": 40,
+            "years": "4",
+            "description": "Python was the first programming language I began using high school, and have been using in a more serious context since my start at Wentworth in 2019. I have extensive experience using Python in mathematical/statistical analysis gained through my Mathematics minor at Wentworth.",
+            "icon": "/icons/python-icon.svg"
+        },
+        {
+            "name": "SQL",
+            "level": 20,
+            "years": "2",
+            "description": "Since completing Databases at Wentworth, I have used SQL for many web-based projects. I have experience designing and implementing SQL-based databases as well as utilizing an SQL database in my full-stack projects.",
+            "icon": "/icons/sql-icon.svg"
+        },
+        {
+            "name": "Java",
+            "level": 49,
+            "years": "4",
+            "description": "I have extensive experience working with application development in Java, ranging from personal game projects to larger-scale mobile development projects. I have utilized Java to develop android mobile applications involving item-tracking, image-recognition, and augmented reality.",
+            "icon": "/icons/java-icon.svg"
+        },
+        {
+            "name": "GoLang",
+            "level": 40,
+            "years": "1",
+            "description": "I worked in GoLang for a year while working in DevOps at Avesha Systems. I worked with Kubernetes packages as well as Ginkgo, a Go testing framework.",
+            "icon": "/icons/golang-icon.svg"
+        },
+        {
+            "name": "Machine Learning",
+            "level": 20,
+            "years": "<1",
+            "description": "Since completing a Machine Learning course in college, I have found myself interested in sharpening my machine learning skills. I have experience working with machine learning libraries in Python such as Scikit-learn, Numpy, and Pandas and R such as caret and e1071.",
+            "icon": "/icons/ml-icon.svg"
+        },
+        {
+            "name": "Kubernetes",
+            "level": 30,
+            "years": "1",
+            "description": "I have a year of professional experience working with Kubernetes in DevOps at Avesha Systems. I have worked with EKS and GKE to deploy, manage, and develop tests for a Kubernetes deployment.",
+            "icon": "/icons/kubernetes-icon.svg"
         }
     ],
+    "intro": {
+        "name": "I'm Joseph Turner",
+        "photo": "/images/family.jpg",
+        "description": "Recent computer science graduate with a passion for full-stack development and data-science. Seeking an entry-level position in web development, devops, or data-science with opportunity to grow into a broader software engineering role. 2 years of experience working with full-stack technologies with a focus on frontend development using React-based frameworks and SQL-based databases. 1 year of experience working with data-science technologies such as R, Python, with a focus in Machine Learning. 1 year of experience working as a DevOps Engineer managing and validating the deployment of kubernetes clusters across multiple cloud providers, developing end-to-end and user-acceptance tests for kubernetes applications."
+    },
+    "education": {
+        "title": "Wentworth Institute of Technology",
+        "subtitle": "Bachelor's of Science in Computer Science",
+        "ps": "Minors in Mathematics & Computer Networking",
+        "skills": ["Software Engineering", "Web Development", "Algorithms", "Data Structures", "Discrete Math", "Databases" ],
+        "logo": "/icons/wentworth-logo.svg",
+        "when": "Class of 2023"
+    },
     "experience": [
         {
-            "where": "Wentworth Institute of Technology",
-            "department": "Bachelor's of Science in Computer Science",
-            "ps": "Minors in Mathematics & Computer Networking",
-            "skills": ["Software Engineering", "Web Development", "Algorithms", "Data Structures", "Discrete Math", "Databases" ],
-            "logo": "/icons/wit-logo.svg"
+            "title": "Avesha Systems",
+            "subtitle": "DevOps Engineer",
+            "skills": ["E2E Testing", "Acceptance Testing", "GoLang/Ginkgo", "JavaScript", "CypressJS", "AWS/EKS", "GCP/GKE", "Kubernetes", "Docker", "Agile Method", "CI/CD", "Github Standards", "Technical Documentation", "Time Management"],
+            "logo": "/icons/avesha-logo.svg",
+            "start": "Jan. 2022",
+            "end": "Mar. 2023",
+            "link": "https://avesha.io",
+            "background": "/icons/avesha-logo.svg",
+            "description": "As a DevOps Engineer Intern at Avesha, I worked as a part of the testing automation team. I was a part of an Agile development process, utilizing Atlassian's Jira, Confluence, and Bitbucket to report, document, and manage my code utilizing CI/CD practices. I was in charge of identifying which test cases should be developed for a given product, and then implementing those test cases. I worked in containerized testing environments using Docker, and utilized GoLang's Ginkgo and CypressJS to create the test cases and generate reports to present the results. My role dealt with the creation, management, and validation of Kubernetes clusters and applications using AWS's EKS and GCP's GKE software. My experience at Avesha taught me how to make an impact while working within an Agile development method and exposed me to software and practices commonly used within DevOps, and I learned a lot about what it means to work as a member of a team.",
+            "projects": [
+                {
+                    "title": "Deployment Testing",   
+                    "skills": ["Docker", "Kubernetes", "AWS/EKS", "GCP/GKE", "Technical Documentation"],
+                    "description": "Developed tests to validate deployment of Avesha's Kubeslice product connecting K8s clusters across different cloud providers. I utilized Bash and the AWS and gcloud clis to fetch deployment information to validate the deployment of Avesha's Kubeslice software. I developed test suites using GoLang's Ginkgo framework to test the connectivity between the clusters, ensuring that the tests could be easily scaled for a 3-or-more cluster deployment. This project taught me the importance of setting clear goals and documenting them before beginning work on a project to get an accurate estimate of the timeline and scale of a project.",
+                    "link": "https://avesha.io",
+                    "logo": "/icons/avesha-logo.svg" 
+                },
+                {
+                    "title": "E2E Testing",
+                    "skills": ["GoLang/Ginkgo", "CypressJS", "UI Testing", "Technical Documentation"],
+                    "description": "Working as a part of the testing automation team, I developed E2E test suites for Avesha's Kubeslice UI. I designed, documented, and implemented tests using a container-in-container environment, utilizing GoLang's Ginkgo testing framework to validate. The Ginkgo tests spawned Docker containers to run the Cypress JS tests, which tested the frontend UI and the accuracy of the information displayed on the frontend UI. This project taught me a lot about the importance of documentation and communication within the flow of a company with a lot of moving pieces.",
+                    "link": "https://avesha.io",
+                    "logo": "/icons/avesha-logo.svg"
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Ball-IQ",
+            "subtitle": "Basketball Stats & Projections",
+            "skills": ["MySQL", "ExpressJS", "ReactJS", "NodeJS", "HTML/CSS", "Python", "APIs", "Database Design", "Machine Learning", "UX Design"],
+            "description": "Fetched data from official NBA api endpoint & implemented machine learning techniques such as principle-component-analysis, linear-regression and k-nearest-neighbor using Python's skLearn package to project player statistics for the following season. I designed and implemented the frontend UI using React's ChakraUI library.",
+            "logo": "/icons/basketball-icon.svg",
+            "background": {
+                "image": "/icons/ball-iq.png",
+                "size": "100%",
+                "position": "top-right"
+            },  
+            "link": "https://github.com/sephturner/BallIQ"
         },
         {
-            "where": "Avesha Systems",
-            "department": "DevOps Engineer",
-            "skills": ["E2E Testing", "Acceptance Testing", "GoLang", "JavaScript", "AWS", "GCP", "Kubernetes", "Docker", "Technical Documentation"],
-            "logo": "/icons/avesha-logo.svg"
+            "title": "Rate Your Dining",
+            "subtitle": "Campus Dining Review Forum",
+            "logo": "/icons/bowl-icon.svg",
+            "link": "https://github.com/wmarchesi123/rate-your-dining-webapp",
+            "background": {
+                "image": "/icons/RYD.png",
+                "size": "100%",
+                "position": "bottom-right"
+            },  
+            "skills": ["Firebase", "Firestore", "React", "HTML/CSS", "Backendless Development"],
+            "description": "Working as a part of a team for my Software Engineering course, I worked with a team member to design and implement the frontend UX for a review forum for college campus dining. Each menu item has a corresponding forum to give a like rating for the item and a text-post review of the menu item. This project taught me about the UX drafting process and how important it is to design the UX before beginning work on a project. We implemented the frontend using React's ChakraUI library."
+        },
+        {
+            "title": "ARTeam",
+            "subtitle": "Augmented Reality Art",
+            "links": ["https://sites.google.com/view/arteam2019"],
+            "logo": "/icons/risingtide-logo.png", 
+            "background": {
+                "image": "/icons/ARTeam.png",
+                "size": "100%",
+                "position": "bottom-right"
+            },
+            "skills": ["Java", "ARCore", "Sceneform", "Open-Source Code", "Augmented Reality", "Teamwork", "Mobile App Development", "Android Studio"],      
+            "description": "I worked with a team of 3 other developers using Google's open-source ARCore and Sceneform technology to recognize images and display a corresponding 3D augmented reality object on top of art pieces created by students at the school. When an image is recognized, the app anchors a 3D object in augmented reality as well as a corresponding song on top of the artwork to enhance the art and create a ambience specific to each piece of art. As a part of the development team, I worked with teams of visual artists, musicians, and 3D artists to plan how each piece of art should be augmented according to the original artist's vision."
+        },
+        {
+            "title": "Recommendify",
+            "subtitle": "Spotify Stats & Recommendations",
+            "logo": "/icons/spotify-logo.svg",
+            "link": "https://github.com/sephturner/Recommendify",
+            "background": {
+                "image": "/icons/recommendify.png",
+                "size": "100%",
+                "position": "bottom-right"
+            },
+            "skills": ["JavaScript", "ExpressJS", "NodeJS", "HTML/CSS", "APIs", "UX Design", "Open-Source Code", "API Auth"],
+            "description": "I developed a simple backendless web application using ExpressJS routing. The frontend was written in raw html and css, with api calls being made using HTTP requests written in javascript. The frontend is connected to Spotify's login using their open source sign-in validation, which was then used to fetch listener information and recommeend songs based upon their top songs and artists using Spotify's recommendation api endpoint."
         }
-    ]
+    ],
+    "contact": {
+        "git": "https://github.com/sephturner",
+        "gmail": "jtimturner67@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/joseph-turner-/",
+        "phone": "+1 774-269-4467",
+        "location": "Gorham, NH",
+        "photo": "/images/family-contact.jpg"
+    }
 }
