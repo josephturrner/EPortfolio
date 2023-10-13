@@ -10,6 +10,7 @@ import {
 import './index.css';
 import HomePage from './pages/Homepage';
 
+
 // router and routes
 const router = createBrowserRouter(
   createRoutesFromElements(
