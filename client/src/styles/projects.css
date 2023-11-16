@@ -104,5 +104,17 @@
         box-shadow: 0 0 10px var(--primary_theme);
         text-shadow: 0 0 10px var(--secondary_theme);
         cursor: pointer;
+        &::before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 2;
+            border-radius: 20px;
+        }
     }
 }
