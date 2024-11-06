@@ -73,7 +73,7 @@ const Skills = forwardRef((props, ref) => {
         };
     }, []);
 
-    if (windowWidth >= 1400) {
+    if (windowWidth >= 1000) {
         return (
             <section className={`skills ${isInView ? "in-view" : ""}`} ref={ref}>
                 <section className='skills-col'>

@@ -53,16 +53,15 @@ a {
 }
 
 .home {
+  display: flex;
   position: relative;
   height: fit-content;
   min-height: 100vh;
-  width: 100vw;
   padding: 0;
 }
 
 .content {
   margin: 0;
-  width: 100vw;
   position: relative;
   height: fit-content;
   min-height: 100vh;

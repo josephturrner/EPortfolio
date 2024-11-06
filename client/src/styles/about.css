@@ -7,7 +7,6 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 100vw;
     opacity: 0;
     transition: opacity 2s ease;
     overflow: hidden;
@@ -121,10 +120,8 @@
     display: grid;
     list-style: none;
     width: 100%;
-    font-size: 1em;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0;
-    margin: 0;
+    font-size: 0.75em;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 

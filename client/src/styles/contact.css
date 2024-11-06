@@ -1,7 +1,6 @@
 /* Contact */
 
 .contact {
-    width: 100vw;
     display: flex;
     height: fit-content;
     min-height: 75vh;

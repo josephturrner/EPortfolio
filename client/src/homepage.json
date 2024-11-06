@@ -77,7 +77,7 @@
         "title": "Wentworth Institute of Technology",
         "subtitle": "Bachelor's of Science in Computer Science",
         "ps": "Minors in Mathematics & Computer Networking",
-        "skills": ["Software Engineering", "Web Development", "Algorithms", "Data Structures", "Discrete Math", "Databases" ],
+        "skills": ["Software Engineering", "Algorithms", "Data Structures", "Discrete Math", "Databases", "System Administration", "Network Administration", "Routing & Switching", "Machine Learning" ],
         "logo": "/icons/wentworth-logo.svg",
         "when": "Class of 2023"
     },
@@ -169,7 +169,7 @@
         "gmail": "jtimturner67@gmail.com",
         "linkedin": "https://www.linkedin.com/in/joseph-turner-/",
         "phone": "+1 774-269-4467",
-        "location": "Gorham, NH",
+        "location": "Plymouth, MA",
         "photo": "/images/family-contact.jpg"
     }
 }

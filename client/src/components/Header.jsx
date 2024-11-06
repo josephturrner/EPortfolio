@@ -34,6 +34,19 @@ function Header(props) {
         };
     }, []);
 
+    useEffect(() => {
+        const setHeaderWidth = () => {
+          const clientWidth = document.documentElement.clientWidth;
+          document.querySelector('.header').style.width = `${clientWidth}px`;
+        };
+      
+        setHeaderWidth(); // Set width initially
+        window.addEventListener('resize', setHeaderWidth);
+      
+        return () => window.removeEventListener('resize', setHeaderWidth);
+    }, []);
+      
+
     return (
         <div className={`header`} style={{paddingTop: headerPadding}}>
             <h2 className={`header-name ${visible ? '' : 'invisible'}`}>{headerText}</h2>

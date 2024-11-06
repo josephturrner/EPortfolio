@@ -85,6 +85,18 @@ function HomePage() {
         };
     }, []);
 
+    useEffect(() => {
+        const setWidth = () => {
+          const clientWidth = document.documentElement.clientWidth;
+          document.querySelector('.home').style.width = `${clientWidth}px`;
+        };
+      
+        setWidth();
+        window.addEventListener('resize', setWidth);
+      
+        return () => window.removeEventListener('resize', setWidth);
+    }, []);
+
     return(
         <div className='home'>
             <Header header={homepage.header} section={headers[headerText]}/>
